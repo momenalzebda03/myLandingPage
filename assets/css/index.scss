@@ -1,0 +1,302 @@
+@import "colors";
+
+// start all
+@font-face {
+    font-family: 'MyFont';
+    src: url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    text-transform: capitalize;
+    background-color: $colorBody;
+    font-family: 'Syne', sans-serif;
+}
+
+.mouse {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $colorOrange;
+}
+
+body nav div div div ul li .active,
+body nav div div div ul li .hoverLink:hover,
+.colorOrange {
+    color: $colorOrange !important;
+}
+
+.marginSection {
+    margin: 100px 0;
+}
+
+// end all
+// start line image
+.lineImage {
+    z-index: -1;
+    height: 100vh;
+}
+
+// end line image
+// start navbar
+body nav div div div .sizeLogo {
+    width: 70px;
+    height: 60px;
+}
+
+body nav div div div div .styleHireMe {
+    height: 50px;
+    background-color: $colorOrange;
+}
+
+body nav div div div div .styleHireMe::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    background-color: $colorWhite;
+    transition: 0.4s;
+}
+
+body nav div div div div .styleHireMe:hover::before {
+    border-radius: 25px;
+    height: 50px;
+}
+
+body nav div div div .divMenu {
+    width: 40px;
+    height: 3px;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+body nav div div div .divMenu:first-child {
+    top: -12px;
+}
+
+body nav div div div .divMenu:nth-child(2) {
+    bottom: 0;
+}
+
+body nav div div div .divMenu:last-child {
+    bottom: -10px;
+}
+
+body nav div div .menuNavbarClick {
+    .divMenu:first-child {
+        top: 0;
+        transform: rotate(40deg);
+    }
+
+    .divMenu:nth-child(2) {
+        opacity: 0;
+        transform: rotate(40deg);
+    }
+
+    .divMenu:last-child {
+        top: 0;
+        transform: rotate(-40deg);
+    }
+}
+
+// end navbar
+// start main
+body main {
+    height: 100vh;
+}
+
+body main div div div div .sizeMainTitle {
+    font-size: 64px;
+}
+
+body main div div div div .movementHasn {
+    animation: framesHasn 2s infinite ease-in-out;
+}
+
+@keyframes framesHasn {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+}
+
+body main div div div div .sizeSpanText {
+    font-size: 20px;
+}
+
+body main div div div .beforeAndAfterImage .sizeImageMe {
+    width: 444px;
+    height: 600px;
+}
+
+body main div div div div .styleDivMainRight {
+    width: 45px;
+    height: 100px;
+    right: -10px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.386), #cccccc2c);
+}
+
+body main div div div div .styleDivMainRight .mouseArrawUp {
+    bottom: -10px;
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+body main div div div .beforeAndAfterImage::before,
+body main div div div .beforeAndAfterImage::after {
+    position: absolute;
+    width: 140px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: $colorWhite;
+    border-radius: 20px;
+}
+
+body main div div div .beforeAndAfterImage::before {
+    content: "vue.js";
+    animation: framesVueJs 5s infinite ease-in-out;
+}
+
+@keyframes framesVueJs {
+    0% {
+        left: -10px;
+        top: 38%;
+    }
+
+    50% {
+        left: 0;
+        top: 37%;
+    }
+
+    100% {
+        left: -10px;
+        top: 38%;
+    }
+}
+
+body main div div div .beforeAndAfterImage::after {
+    content: "pure";
+    animation: framesPure 5s infinite ease-in-out;
+}
+
+@keyframes framesPure {
+    0% {
+        top: 45%;
+        right: 0;
+    }
+
+    50% {
+        top: 44%;
+        right: 10px;
+    }
+
+    100% {
+        top: 45%;
+        right: 0;
+    }
+}
+
+// end main
+// start numbers
+body section div div div .sizeTitleNumber {
+    font-size: 24px;
+}
+
+body section div div div .colorOrangeAndNumber {
+    font-size: 38px;
+    color: $colorOrange;
+}
+
+// end numbers
+// start about me
+.titleAboutMe {
+    font-size: 28px;
+}
+
+.titleAboutMe::before,
+.titleAboutMe::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: $colorOrange;
+    top: 45%;
+}
+
+.titleAboutMe::before {
+    left: -25px;
+}
+
+.titleAboutMe::after {
+    right: -25px;
+}
+
+.beforeOrangeArraow::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $colorOrange;
+    left: -3px;
+    top: -3px;
+}
+
+.buttonMain {
+    padding: 12px 0;
+    background-color: $colorWhite;
+}
+
+// end about me
+// start media
+@media (max-width: 1272px) {
+
+    body main div div div .beforeAndAfterImage::after,
+    body main div div div .beforeAndAfterImage::before {
+        display: none;
+    }
+}
+
+@media (max-width: 990px) {
+    body main div div div .beforeAndAfterImage .sizeImageMe {
+        width: 100%;
+        height: auto;
+    }
+
+    body main {
+        height: unset;
+    }
+
+    body main div div div div .sizeMainTitle {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 769px) {
+    body main div div div .beforeAndAfterImage .sizeImageMe {
+        width: 60%;
+        height: auto;
+    }
+}
+
+// end media
