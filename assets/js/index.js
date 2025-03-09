@@ -1,7 +1,3 @@
-$("#clickMenu").on("click", function () {
-  $(this).toggleClass("menuNavbarClick");
-});
-
 function scrollToBottom() {
   const sections = document.querySelectorAll("section");
   for (let i = 0; i < sections.length; i++) {
@@ -14,35 +10,86 @@ function scrollToBottom() {
   }
 }
 
-$(document).ready(function () {
-  function animateNumber(element, start, end, duration, suffix = "") {
-    let current = start;
-    const increment = end / (duration / 50);
+function animateNumber(element, start, end, duration, suffix = "") {
+  let current = start;
+  const increment = (end - start) / (duration / 50);
 
-    function updateNumber() {
-      current += increment;
-      if (current >= end) {
-        element.text(end + suffix);
-      } else {
-        element.text(Math.ceil(current) + suffix);
-        requestAnimationFrame(updateNumber);
-      }
+  function updateNumber() {
+    current += increment;
+    if (current >= end) {
+      element.text(end + suffix);
+    } else {
+      element.text(Math.ceil(current) + suffix);
+      requestAnimationFrame(updateNumber);
     }
-    updateNumber();
   }
 
-  const elements = $(".colorOrangeAndNumber");
-  if (elements.length === 3) {
-    setTimeout(function () {
-      animateNumber($(elements[0]), 0, 98, 22000, "%");
-    }, 500);
+  updateNumber();
+}
 
-    setTimeout(function () {
-      animateNumber($(elements[1]), 0, 90, 22000, "+");
-    }, 500);
+$(document).ready(function () {
+  $("#clickMenu").on("click", function () {
+    $(this).toggleClass("menuNavbarClick");
+  });
 
-    setTimeout(function () {
-      animateNumber($(elements[2]), 0, 3, 22000, "+");
-    }, 500);
+  $(".colorOrangeAndNumber").each(function () {
+    let element = $(this);
+    let targetValue = element.attr("data-target");
+    let numericValue = parseInt(targetValue.replace("%", "").replace("+", ""));
+    let suffix = targetValue.includes("%")
+      ? "%"
+      : targetValue.includes("+")
+      ? "+"
+      : "";
+    let currentValue = 0;
+
+    function animateNumber() {
+      if (currentValue < numericValue) {
+        currentValue++;
+        element.text(currentValue + suffix);
+        requestAnimationFrame(animateNumber);
+      } else {
+        element.text(numericValue + suffix);
+      }
+    }
+    animateNumber();
+  });
+
+  $(window).on("scroll", function () {
+    var scrollPos = $(document).scrollTop();
+    if (scrollPos === 0) {
+      $("a.nav-link").removeClass("active");
+      $('a[href="#home"]').addClass("active");
+    } else {
+      $("section").each(function () {
+        var sectionOffset = $(this).offset().top - 50;
+        var sectionHeight = $(this).outerHeight();
+        if (
+          scrollPos >= sectionOffset &&
+          scrollPos < sectionOffset + sectionHeight
+        ) {
+          var id = $(this).attr("id");
+          $("a.nav-link").removeClass("active");
+          $('a[href="#' + id + '"]').addClass("active");
+        }
+      });
+    }
+  });
+});
+
+const scrollToTopArraw = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+$(window).on("scroll", function () {
+  const scrollPos = $(window).scrollTop();
+  const sectionTwoOffset = $("#about").offset().top;
+  if (scrollPos >= sectionTwoOffset) {
+    $(".arrawTop").addClass("show");
+  } else {
+    $(".arrawTop").removeClass("show");
   }
 });

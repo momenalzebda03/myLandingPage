@@ -36,26 +36,69 @@ body nav div div div ul li .hoverLink:hover,
     margin: 100px 0;
 }
 
-// end all
-// start line image
 .lineImage {
     z-index: -1;
-    height: 100vh;
 }
 
-// end line image
+.titleAboutMe {
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.titleAboutMe:hover {
+    margin-left: 0 !important;
+}
+
+.titleAboutMe:hover::after {
+    right: 0;
+    opacity: 0;
+}
+
+.titleAboutMe:hover::before {
+    left: 0;
+    opacity: 0;
+}
+
+.titleAboutMe::before,
+.titleAboutMe::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: $colorOrange;
+    top: 45%;
+    transition: 0.5s;
+}
+
+.titleAboutMe::before {
+    left: -25px;
+}
+
+.titleAboutMe::after {
+    right: -25px;
+}
+
+.textJustify {
+    text-align: justify;
+}
+
+// end all
 // start navbar
+body nav {
+    z-index: 1;
+}
+
 body nav div div div .sizeLogo {
     width: 70px;
     height: 60px;
 }
 
-body nav div div div div .styleHireMe {
+.styleHireMe {
     height: 50px;
     background-color: $colorOrange;
 }
 
-body nav div div div div .styleHireMe::before {
+.styleHireMe::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -65,7 +108,7 @@ body nav div div div div .styleHireMe::before {
     transition: 0.4s;
 }
 
-body nav div div div div .styleHireMe:hover::before {
+.styleHireMe:hover::before {
     border-radius: 25px;
     height: 50px;
 }
@@ -106,13 +149,18 @@ body nav div div .menuNavbarClick {
     }
 }
 
+body nav div div div ul li .hoverLink {
+    color: $colorWhite;
+}
+
 // end navbar
 // start main
 body main {
+    padding-top: 160px;
     height: 100vh;
 }
 
-body main div div div div .sizeMainTitle {
+body main div div div div div .sizeMainTitle {
     font-size: 64px;
 }
 
@@ -134,13 +182,14 @@ body main div div div div .movementHasn {
     }
 }
 
-body main div div div div .sizeSpanText {
+body main div div div div div .sizeSpanText {
     font-size: 20px;
 }
 
 body main div div div .beforeAndAfterImage .sizeImageMe {
-    width: 444px;
-    height: 600px;
+    width: 550px;
+    height: auto;
+    object-fit: contain;
 }
 
 body main div div div div .styleDivMainRight {
@@ -173,46 +222,46 @@ body main div div div .beforeAndAfterImage::after {
 }
 
 body main div div div .beforeAndAfterImage::before {
-    content: "vue.js";
+    content: "momen";
     animation: framesVueJs 5s infinite ease-in-out;
 }
 
 @keyframes framesVueJs {
     0% {
-        left: -10px;
+        left: 55px;
         top: 38%;
     }
 
     50% {
-        left: 0;
+        left: 50px;
         top: 37%;
     }
 
     100% {
-        left: -10px;
+        left: 55px;
         top: 38%;
     }
 }
 
 body main div div div .beforeAndAfterImage::after {
-    content: "pure";
+    content: "alzebda";
     animation: framesPure 5s infinite ease-in-out;
 }
 
 @keyframes framesPure {
     0% {
         top: 45%;
-        right: 0;
+        right: 60px;
     }
 
     50% {
         top: 44%;
-        right: 10px;
+        right: 55px;
     }
 
     100% {
         top: 45%;
-        right: 0;
+        right: 60px;
     }
 }
 
@@ -229,46 +278,144 @@ body section div div div .colorOrangeAndNumber {
 
 // end numbers
 // start about me
-.titleAboutMe {
-    font-size: 28px;
-}
-
-.titleAboutMe::before,
-.titleAboutMe::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    background-color: $colorOrange;
-    top: 45%;
-}
-
-.titleAboutMe::before {
-    left: -25px;
-}
-
-.titleAboutMe::after {
-    right: -25px;
-}
-
-.beforeOrangeArraow::before {
+body main div div div div div .buttonMain div .beforeOrangeArraow::before {
     content: "";
     position: absolute;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     background-color: $colorOrange;
-    left: -3px;
-    top: -3px;
+    left: 11.5%;
+    top: 18%;
+    transition: 0.35s;
 }
 
-.buttonMain {
+body main div div div div div .buttonMain {
     padding: 12px 0;
     background-color: $colorWhite;
+
+    div {
+        .beforeOrangeArraow {
+            img {
+                transform: rotate(0);
+                transition: 0.35s;
+            }
+        }
+    }
+}
+
+body main div div div div div .buttonMain:hover {
+    div {
+        .beforeOrangeArraow {
+            img {
+                transform: rotate(50deg);
+            }
+        }
+
+        .beforeOrangeArraow::before {
+            width: 102%;
+            height: 60px;
+            left: -3px;
+            top: -3px;
+            border-radius: 20%;
+        }
+    }
+}
+
+body .marginSection div div div div .textAboutMe {
+    font-size: 23px;
+}
+
+body .marginSection div div div div .sizeImageLaptop {
+    width: 100%;
 }
 
 // end about me
+// start services
+body .marginSection div div div .sizeTextServices {
+    font-size: 33px;
+}
+
+body .marginSection div .rowGap div .heightServices div .sizeImageServes {
+    width: 70px;
+    height: 70px;
+}
+
+body .marginSection div .rowGap div .heightServices div .sizeTitleServices {
+    font-size: 35px;
+}
+
+body .marginSection div .rowGap div .heightServices {
+    height: 500px;
+    box-shadow: 0 0 0 0 $colorOrangeHover;
+    transition: 0.3s;
+}
+
+body .marginSection div .rowGap div .heightServices::-webkit-scrollbar {
+    width: 0;
+}
+
+body .marginSection div .rowGap div .heightServices:hover {
+    box-shadow: 0 0 4px 4px $colorOrangeHover;
+
+    div {
+        img {
+            filter: sepia(1) saturate(4) hue-rotate(-10deg);
+        }
+
+        h2 {
+            color: $colorOrange !important;
+        }
+
+        span {
+            color: $colorWhite;
+        }
+    }
+}
+
+body .marginSection div .rowGap div .heightServices div .textNoHover {
+    color: $colorNoHover;
+}
+
+body .marginSection div .rowGap {
+    row-gap: 25px;
+}
+
+// end services
+// start arraw top
+body .arrawTop {
+    bottom: 30px;
+    right: 30px;
+    background-color: $colorOrange;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+
+    .imageArrawArotate {
+        transform: rotate(90deg);
+        margin-bottom: 0;
+        transition: 0.3s;
+    }
+}
+
+body .arrawTop:hover {
+    .imageArrawArotate {
+        margin-bottom: 10px;
+    }
+}
+
+body .arrawTop.show {
+    opacity: 1;
+}
+
+// end arraw top
 // start media
+@media (max-width: 1400px) {
+    body main {
+        height: unset;
+    }
+}
+
 @media (max-width: 1272px) {
 
     body main div div div .beforeAndAfterImage::after,
@@ -283,19 +430,19 @@ body section div div div .colorOrangeAndNumber {
         height: auto;
     }
 
-    body main {
-        height: unset;
+    body main div div div div div .sizeMainTitle {
+        font-size: 40px;
     }
 
-    body main div div div div .sizeMainTitle {
-        font-size: 40px;
+    body .marginSection div div div div .sizeImageLaptop {
+        width: 100%;
+        height: auto;
     }
 }
 
-@media (max-width: 769px) {
-    body main div div div .beforeAndAfterImage .sizeImageMe {
-        width: 60%;
-        height: auto;
+@media (max-width: 768px) {
+    body .marginSection div .rowGap div .heightServices {
+        height: unset;
     }
 }
 

@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="dist/css/index.css">
+    <link rel="stylesheet" href="assest/css/aos.css">
     <title>MOMEN ALZEBDA</title>
 </head>
 
 <body>
     <!-- start line image -->
-    <div class="container position-relative">
-        <div class="position-fixed lineImage">
+    <div class="position-fixed w-100 lineImage">
+        <div class="container position-relative">
             <img src="assets/images/Lines.svg" alt="" class="w-100">
         </div>
     </div>
     <!-- end line image -->
     <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-black py-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black position-fixed w-100 py-3">
         <div class="container">
-            <div class="d-lg-flex justify-content-between w-100">
+            <div class="d-lg-flex justify-content-between align-items-center w-100">
                 <div class="d-flex justify-content-between">
                     <div class="navbar-toggler d-flex align-items-center border border-0 gap-2 mouse d-lg-none"
-                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent">
+                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                         <div class="d-flex flex-column gap-2 align-items-end position-relative mouse" id="clickMenu">
                             <div class="bg-white position-absolute start-0 divMenu"></div>
                             <div class="bg-white position-absolute start-0 divMenu"></div>
@@ -37,65 +37,80 @@
                         <img src="assets/images/logo.svg" alt="" class="sizeLogo">
                     </a>
                 </div>
-                <div class="collapse navbar-collapse container" id="navbarSupportedContent">
-                    <ul class="navbar-nav d-flex gap-lg-5 w-100 align-items-lg-center justify-content-lg-center">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex gap-lg-5 align-items-lg-center justify-content-lg-center">
                         <li>
-                            <a class="nav-link text-white active hoverLink" href="index.html">home</a>
+                            <a class="nav-link active hoverLink" href="#home">home</a>
                         </li>
                         <li>
-                            <a class="nav-link text-white hoverLink" href="">about</a>
+                            <a class="nav-link hoverLink" href="#about">about</a>
                         </li>
                         <li>
-                            <a class="nav-link text-white hoverLink" href="">services</a>
+                            <a class="nav-link hoverLink" href="#services">services</a>
                         </li>
                         <li>
-                            <a class="nav-link text-white hoverLink" href="">portfolios</a>
+                            <a class="nav-link hoverLink" href="#protfolios">portfolios</a>
                         </li>
                         <li>
-                            <a class="nav-link text-white hoverLink" href="">contact</a>
+                            <a class="nav-link hoverLink" href="#contact">contact</a>
                         </li>
                     </ul>
-                    <div class="d-inline-block">
+                    <div class="d-inline-block d-lg-none">
                         <a href="https://docs.google.com/document/d/192Lt5iQCjS4pF4greyv0r7bFJYfOgVTjEfPjmClm__4/edit?tab=t.0"
-                            class="overflow-hidden mt-3 mt-lg-0 rounded-5 text-nowrap position-relative d-flex justify-content-center align-items-center nav-link fw-bold px-5 styleHireMe">
+                            class="overflow-hidden rounded-5 position-relative d-flex justify-content-center align-items-center nav-link fw-bold px-5 styleHireMe">
                             <span class="position-relative">hire me</span>
                         </a>
                     </div>
                 </div>
+                <div class="d-none d-lg-inline-block">
+                    <a href="https://docs.google.com/document/d/192Lt5iQCjS4pF4greyv0r7bFJYfOgVTjEfPjmClm__4/edit?tab=t.0"
+                        class="overflow-hidden mt-3 rounded-5 position-relative d-flex justify-content-center align-items-center nav-link fw-bold px-5 styleHireMe">
+                        <span class="position-relative">hire me</span>
+                    </a>
+                </div>
             </div>
+        </div>
         </div>
     </nav>
     <!-- end navbar -->
     <!-- start main -->
-    <main class="mt-3 d-flex align-items-center">
+    <main class="d-flex align-items-lg-center" id="home">
         <div class="container">
-            <div class="row mx-0 gap-4 flex-column-reverse flex-md-row gap-md-0 align-items-center">
+            <div class="row mx-0 align-items-center flex-column-reverse align-items-center flex-md-row">
                 <div class="col-12 col-md-6">
-                    <div class="d-flex flex-column gap-4 text-white text-center text-md-start">
-                        <h2 class="sizeMainTitle">Front-End Vue Developer<span
-                                class="movementHasn d-inline-block">👋</span></h2>
-                        <span class="sizeSpanText">Hi, I'm Moamen AlZebdeh. A passionate Front-end vue Developer and
-                            Software Engineer based in Palestine 📍.
-                        </span>
+                    <div class="d-flex flex-column gap-4">
                         <div>
-                            <a href="" class="nav-link text-black d-inline-block buttonMain rounded-5">
+                            <h2 class="text-white sizeMainTitle" data-aos="fade-up">Front-End Developer Vue.js<span
+                                    class="movementHasn d-inline-block">👋</span></h2>
+                        </div>
+                        <div>
+                            <span class="text-white sizeSpanText" data-aos="fade-up">Hi, I'm Moamen AlZebdeh. A
+                                passionate
+                                Front-end vue Developer and Software Engineer based in Palestine 📍.
+                            </span>
+                        </div>
+                        <div>
+                            <a href="https://docs.google.com/document/d/192Lt5iQCjS4pF4greyv0r7bFJYfOgVTjEfPjmClm__4/edit?tab=t.0"
+                                class="position-relative overflow-hidden nav-link d-inline-block buttonMain rounded-5">
                                 <div class="d-flex gap-3 align-items-center justify-content-between px-4">
-                                    <div class="position-relative beforeOrangeArraow">
+                                    <div class="beforeOrangeArraow">
                                         <img src="assets/images/arraowUp.svg" alt="" class="position-relative">
                                     </div>
-                                    <span>Personal CV</span>
+                                    <div class="position-relative">
+                                        <span>Personal CV</span>
+                                    </div>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5 d-flex justify-content-center px-0">
-                    <div class="position-relative beforeAndAfterImage d-flex align-items-center justify-content-center">
-                        <img src="assets/images/me.svg" alt="" class="sizeImageMe">
+                <div class="col-12 col-md-6 col-lg-5 px-0">
+                    <div class="position-relative beforeAndAfterImage" data-aos="fade-down">
+                        <img src="assets/images/me.png" alt="" class="sizeImageMe">
                     </div>
                 </div>
                 <div class="col-1 d-none d-lg-flex justify-content-end">
-                    <div class="d-inline-block position-relative">
+                    <div class="d-inline-block position-relative" data-aos="fade-down">
                         <div
                             class="d-flex justify-content-center rounded-5 position-absolute bottom-0 styleDivMainRight">
                             <div class="mouseArrawUp position-absolute mouse" onclick="scrollToBottom()">
@@ -111,23 +126,23 @@
     <!-- start numbers -->
     <section class="marginSection">
         <div class="container">
-            <div class="row gap-5 gap-sm-0 mx-0 bg-black rounded-4 py-4">
-                <div class="col col-md-4">
+            <div class="row gap-5 gap-sm-0 mx-0 px-3 bg-black rounded-4 overflow-hidden py-5">
+                <div class="col col-md-4" data-aos="fade-right">
                     <div class="text-white text-center d-flex flex-column gap-2">
                         <h2 class="sizeTitleNumber">Customer satisfaction</h2>
-                        <span class="fw-bold colorOrangeAndNumber"></span>
+                        <span class="fw-bold colorOrangeAndNumber" data-target="90%">0</span>
                     </div>
                 </div>
                 <div class="col col-md-4">
                     <div class="text-white text-center d-flex flex-column gap-2">
                         <h2 class="sizeTitleNumber">Completed projects</h2>
-                        <span class="fw-bold colorOrangeAndNumber"></span>
+                        <span class="fw-bold colorOrangeAndNumber" data-target="85+">0</span>
                     </div>
                 </div>
-                <div class="col col-md-4">
+                <div class="col col-md-4" data-aos="fade-left">
                     <div class="text-white text-center d-flex flex-column gap-2">
                         <h2 class="sizeTitleNumber">Years of experience</h2>
-                        <span class="fw-bold colorOrangeAndNumber"></span>
+                        <span class="fw-bold colorOrangeAndNumber" data-target="3+">0</span>
                     </div>
                 </div>
             </div>
@@ -135,28 +150,115 @@
     </section>
     <!-- end numbers -->
     <!-- start about me -->
-    <section class="marginSection">
+    <section class="marginSection" id="about">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row gap-3 gap-md-0 align-items-center">
+                <div class="col-12 col-md-6">
                     <div class="d-flex flex-column gap-3">
-                        <div>
-                            <h2 class="d-inline-block position-relative colorOrange fw-bold titleAboutMe ms-4">about me
+                        <div data-aos="fade-up">
+                            <h2 class="d-inline-block position-relative fw-bold colorOrange titleAboutMe ms-4">about me
                             </h2>
                         </div>
-                        <span class="text-white">Moamen AlZebdeh is a skilled Web Developer with over two years of
-                            experience in Front-End Development. He specializes in HTML, CSS, JavaScript, and vue.js,
-                            creating dynamic, user-friendly websites. Passionate about innovation, he focuses on
-                            performance optimization and delivering seamless user experiences. 🚀</span>
+                        <span class="textAboutMe textJustify text-white" data-aos="fade-up">Moamen Alzeba is a skilled
+                            Web Developer
+                            with over two years of experience in Front-End Development. He specializes in HTML, CSS,
+                            JavaScript, and vue.js, creating dynamic, user-friendly websites. Passionate about
+                            innovation, he focuses on performance optimization and delivering seamless user experiences.
+                            🚀</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="d-flex justify-content-end" data-aos="fade-down">
+                        <img src="assets/images/laptop.png" alt="" class="sizeImageLaptop">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- end about me -->
+    <!-- start services -->
+    <section class="marginSection" id="services">
+        <div class="container">
+            <div class="text-white text-center">
+                <div class="d-flex flex-column gap-3">
+                    <div data-aos="flip-up">
+                        <h2 class="d-inline-block position-relative fw-bold colorOrange titleAboutMe">Services
+                        </h2>
+                    </div>
+                    <h3 class="sizeTextServices" data-aos="flip-up">Making Magic Happen for Your Business</h3>
+                </div>
+            </div>
+            <div class="row rowGap py-5">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="bg-black p-4 rounded-4 d-flex flex-column gap-5 overflow-auto heightServices">
+                        <div>
+                            <img src="assets/images/services2.svg" alt="" class="sizeImageServes">
+                        </div>
+                        <div class="d-flex flex-column gap-3">
+                            <h2 class="text-white w-50 fw-bold sizeTitleServices" data-aos="flip-up">Ability to handle
+                                API</h2>
+                            <span class="textJustify textNoHover" id="textSubstring" data-aos="flip-up">I possess
+                                comprehensive
+                                expertise in working with APIs, including the ability to effectively access, retrieve,
+                                and handle requests. I am proficient in processing data, displaying it in user-friendly
+                                formats, and performing operations such as modifying and deleting data based on specific
+                                requirements. My skills ensure efficient and seamless integration, while maintaining a
+                                high level of data accuracy and security throughout the process</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="bg-black p-4 rounded-4 d-flex flex-column gap-5 overflow-auto heightServices">
+                        <div>
+                            <img src="assets/images/services3.svg" alt="" class="sizeImageServes">
+                        </div>
+                        <div class="d-flex flex-column gap-3">
+                            <h2 class="text-white w-50 fw-bold sizeTitleServices" data-aos="flip-up">Design Responsive
+                            </h2>
+                            <span class="textJustify textNoHover" id="textSubstring" data-aos="flip-up">Responsive
+                                design ensures websites
+                                adapt
+                                seamlessly to different screen sizes and devices for an optimal user experience.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="bg-black p-4 rounded-4 d-flex flex-column gap-5 overflow-auto heightServices">
+                        <div>
+                            <img src="assets/images/services2.svg" alt="" class="sizeImageServes">
+                        </div>
+                        <div class="d-flex flex-column gap-3">
+                            <h2 class="text-white w-50 fw-bold sizeTitleServices" data-aos="flip-up">Website development
+                            </h2>
+                            <span class="textJustify textNoHover" id="textSubstring" data-aos="flip-up">Website
+                                development is the process
+                                of building
+                                and maintaining websites to ensure functionality, usability, and optimal
+                                performance.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end services -->
+    <!-- start arrawTop -->
+    <div class="position-fixed arrawTop rounded-4 px-3 py-3" onclick="scrollToTopArraw()">
+        <img src="assets/images/arrawWhite.svg" alt="" class="imageArrawArotate">
+    </div>
+    <!-- end arraw top -->
 </body>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/index.js"></script>
+<script src="assets/js/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1200,
+        once: false,
+        offset: 200,
+    });
+</script>
 
 </html>
