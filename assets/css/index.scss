@@ -82,17 +82,6 @@ body nav div div div ul li .hoverLink:hover,
     text-align: justify;
 }
 
-// end all
-// start navbar
-body nav {
-    z-index: 1;
-}
-
-body nav div div div .sizeLogo {
-    width: 70px;
-    height: 60px;
-}
-
 .styleHireMe {
     height: 50px;
     background-color: $colorOrange;
@@ -111,6 +100,43 @@ body nav div div div .sizeLogo {
 .styleHireMe:hover::before {
     border-radius: 25px;
     height: 50px;
+}
+
+// end all
+// start navbar
+body .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
+}
+
+body .navbar.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+body .navbar.visible {
+    opacity: 1;
+    transform: translateY(0);
+    position: fixed;
+    top: 0;
+}
+
+body .navbar.scroll-up {
+    position: fixed;
+    top: 0;
+}
+
+body nav {
+    z-index: 1;
+}
+
+body nav div div div .sizeLogo {
+    width: 70px;
+    height: 60px;
 }
 
 body nav div div div .divMenu {
@@ -154,9 +180,18 @@ body nav div div div ul li .hoverLink {
 }
 
 // end navbar
+// start modal
+body div div div div form div .styleInput {
+    background-color: $coloccc;
+}
+
+body div div div div form div div .buttonClose {
+    height: 50px;
+}
+
+// end modal
 // start main
 body main {
-    padding-top: 160px;
     height: 100vh;
 }
 
@@ -221,47 +256,50 @@ body main div div div .beforeAndAfterImage::after {
     border-radius: 20px;
 }
 
-body main div div div .beforeAndAfterImage::before {
-    content: "momen";
+.iconVueJs {
+    width: 50px;
+    filter: brightness(0) invert(1);
+    top: 37%;
+    left: 100px;
     animation: framesVueJs 5s infinite ease-in-out;
 }
 
 @keyframes framesVueJs {
     0% {
-        left: 55px;
-        top: 38%;
-    }
-
-    50% {
-        left: 50px;
         top: 37%;
-    }
-
-    100% {
-        left: 55px;
-        top: 38%;
-    }
-}
-
-body main div div div .beforeAndAfterImage::after {
-    content: "alzebda";
-    animation: framesPure 5s infinite ease-in-out;
-}
-
-@keyframes framesPure {
-    0% {
-        top: 45%;
-        right: 60px;
+        left: 100px;
     }
 
     50% {
-        top: 44%;
-        right: 55px;
+        top: 36%;
+        left: 90px;
     }
 
     100% {
-        top: 45%;
-        right: 60px;
+        top: 37%;
+        left: 100px;
+    }
+}
+
+.iconBottstrap {
+    width: 50px;
+    animation: framesBootstrap 5s infinite ease-in-out;
+}
+
+@keyframes framesBootstrap {
+    0% {
+        top: 37%;
+        right: 140px;
+    }
+
+    50% {
+        top: 36%;
+        right: 130px;
+    }
+
+    100% {
+        top: 37%;
+        right: 140px;
     }
 }
 
@@ -308,7 +346,7 @@ body main div div div div div .buttonMain:hover {
     div {
         .beforeOrangeArraow {
             img {
-                transform: rotate(50deg);
+                transform: rotate(55deg);
             }
         }
 
@@ -382,6 +420,50 @@ body .marginSection div .rowGap {
 }
 
 // end services
+// start protfolios
+body .marginSection div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosTop,
+body .marginSection div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosBttom {
+    transition: 0.5s;
+}
+
+body .marginSection div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosTop {
+    background-color: $colorOrange;
+    right: 50px;
+    top: -80px;
+
+    img {
+        transform: translate(0, 0);
+        transition: 0.3s;
+    }
+}
+
+body .marginSection div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosTop:hover {
+    img {
+        transform: translate(5px, -5px);
+    }
+}
+
+body .marginSection div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosBttom {
+    bottom: -500px;
+}
+
+body .marginSection div .rowGap div .hoverAbsoluteBottomAndTop:hover {
+    .divProtfoliosTop {
+        top: 30px;
+    }
+
+    .divProtfoliosBttom {
+        bottom: 50px;
+    }
+}
+
+body .marginSection div .rowGap div .hoverAbsoluteBottomAndTop .imageProtfolios {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+// end protfiolos
 // start arraw top
 body .arrawTop {
     bottom: 30px;
@@ -409,7 +491,35 @@ body .arrawTop.show {
 }
 
 // end arraw top
+// start footer
+body footer div div .borderBottom::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    bottom: -12px;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background-color: $colorOrange;
+}
+
+body footer div div .margintopEmail {
+    margin-top: 40px;
+}
+
+body footer div div .margintopEmail div ul li .sizeIconFooter {
+    width: 30px;
+    height: 30px;
+}
+
+// end footer
 // start media
+@media (max-width: 1199px) and (min-width: 990px) {
+    body .marginSection div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosBttom {
+        display: none;
+    }
+}
+
 @media (max-width: 1400px) {
     body main {
         height: unset;
@@ -418,18 +528,18 @@ body .arrawTop.show {
 
 @media (max-width: 1272px) {
 
-    body main div div div .beforeAndAfterImage::after,
-    body main div div div .beforeAndAfterImage::before {
+    body main div div div .iconVueJs,
+    body main div div div .iconBottstrap {
         display: none;
     }
-}
 
-@media (max-width: 990px) {
     body main div div div .beforeAndAfterImage .sizeImageMe {
         width: 100%;
         height: auto;
     }
+}
 
+@media (max-width: 990px) {
     body main div div div div div .sizeMainTitle {
         font-size: 40px;
     }

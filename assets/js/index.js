@@ -93,3 +93,24 @@ $(window).on("scroll", function () {
     $(".arrawTop").removeClass("show");
   }
 });
+
+var lastScrollTop = 0;
+var navbar = $(".navbar");
+
+$(window).on("scroll", function () {
+  var scrollPos = $(this).scrollTop();
+
+  if (scrollPos > lastScrollTop) {
+    navbar.removeClass("visible").addClass("hidden");
+  } else {
+    navbar.removeClass("hidden").addClass("visible");
+  }
+
+  if (scrollPos >= 100) {
+    navbar.addClass("scroll-up");
+  } else {
+    navbar.removeClass("scroll-up");
+  }
+
+  lastScrollTop = scrollPos <= 0 ? 0 : scrollPos;
+});

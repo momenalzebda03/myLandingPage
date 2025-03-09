@@ -21,7 +21,7 @@
     </div>
     <!-- end line image -->
     <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-black position-fixed w-100 py-3">
+    <nav class="navbar navbar-expand-lg navbar-light w-100 bg-black py-3">
         <div class="container">
             <div class="d-lg-flex justify-content-between align-items-center w-100">
                 <div class="d-flex justify-content-between">
@@ -39,21 +39,11 @@
                 </div>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav d-flex gap-lg-5 align-items-lg-center justify-content-lg-center">
-                        <li>
-                            <a class="nav-link active hoverLink" href="#home">home</a>
-                        </li>
-                        <li>
-                            <a class="nav-link hoverLink" href="#about">about</a>
-                        </li>
-                        <li>
-                            <a class="nav-link hoverLink" href="#services">services</a>
-                        </li>
-                        <li>
-                            <a class="nav-link hoverLink" href="#protfolios">portfolios</a>
-                        </li>
-                        <li>
-                            <a class="nav-link hoverLink" href="#contact">contact</a>
-                        </li>
+                        <li><a class="nav-link active hoverLink" href="#home">home</a></li>
+                        <li><a class="nav-link hoverLink" href="#about">about</a></li>
+                        <li><a class="nav-link hoverLink" href="#services">services</a></li>
+                        <li><a class="nav-link hoverLink" href="#protfolios">portfolios</a></li>
+                        <li><a class="nav-link hoverLink" href="#contact">contact</a></li>
                     </ul>
                     <div class="d-inline-block d-lg-none">
                         <a href="https://docs.google.com/document/d/192Lt5iQCjS4pF4greyv0r7bFJYfOgVTjEfPjmClm__4/edit?tab=t.0"
@@ -63,16 +53,59 @@
                     </div>
                 </div>
                 <div class="d-none d-lg-inline-block">
-                    <a href="https://docs.google.com/document/d/192Lt5iQCjS4pF4greyv0r7bFJYfOgVTjEfPjmClm__4/edit?tab=t.0"
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
                         class="overflow-hidden mt-3 rounded-5 position-relative d-flex justify-content-center align-items-center nav-link fw-bold px-5 styleHireMe">
                         <span class="position-relative">hire me</span>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
-        </div>
     </nav>
     <!-- end navbar -->
+    <!-- start modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-black text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Form Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="1cdfeae3-a9de-4051-b8f7-dfb7b1d1f767">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control styleInput" placeholder="Enter your name" name="name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control styleInput" placeholder="Enter your email"
+                                name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control styleInput" name="message" rows="3"
+                                placeholder="Enter your message" required></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex align-items-center gap-3">
+                                <button type="button" class="btn btn-secondary rounded-5 px-5 buttonClose"
+                                    data-bs-dismiss="modal">Close</button>
+                                <div class="d-inline-block">
+                                    <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        class="overflow-hidden text-black rounded-5 position-relative d-flex justify-content-center align-items-center nav-link fw-bold px-5 styleHireMe">
+                                        <span class="position-relative">hire me</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
     <!-- start main -->
     <main class="d-flex align-items-lg-center" id="home">
         <div class="container">
@@ -106,7 +139,9 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 px-0">
                     <div class="position-relative beforeAndAfterImage" data-aos="fade-down">
+                        <img src="assets/images/vuejs.svg" alt="" class="position-absolute iconVueJs">
                         <img src="assets/images/me.png" alt="" class="sizeImageMe">
+                        <img src="assets/images/bootstrap.png" alt="" class="position-absolute iconBottstrap">
                     </div>
                 </div>
                 <div class="col-1 d-none d-lg-flex justify-content-end">
@@ -156,7 +191,7 @@
                 <div class="col-12 col-md-6">
                     <div class="d-flex flex-column gap-3">
                         <div data-aos="fade-up">
-                            <h2 class="d-inline-block position-relative fw-bold colorOrange titleAboutMe ms-4">about me
+                            <h2 class="d-inline-block position-relative fw-bold colorOrange titleAboutMe ms-4">ABOUT ME
                             </h2>
                         </div>
                         <span class="textAboutMe textJustify text-white" data-aos="fade-up">Moamen Alzeba is a skilled
@@ -182,7 +217,7 @@
             <div class="text-white text-center">
                 <div class="d-flex flex-column gap-3">
                     <div data-aos="flip-up">
-                        <h2 class="d-inline-block position-relative fw-bold colorOrange titleAboutMe">Services
+                        <h2 class="d-inline-block position-relative fw-bold colorOrange titleAboutMe">SERVICES
                         </h2>
                     </div>
                     <h3 class="sizeTextServices" data-aos="flip-up">Making Magic Happen for Your Business</h3>
@@ -198,12 +233,12 @@
                             <h2 class="text-white w-50 fw-bold sizeTitleServices" data-aos="flip-up">Ability to handle
                                 API</h2>
                             <span class="textJustify textNoHover" id="textSubstring" data-aos="flip-up">I possess
-                                comprehensive
-                                expertise in working with APIs, including the ability to effectively access, retrieve,
-                                and handle requests. I am proficient in processing data, displaying it in user-friendly
-                                formats, and performing operations such as modifying and deleting data based on specific
-                                requirements. My skills ensure efficient and seamless integration, while maintaining a
-                                high level of data accuracy and security throughout the process</span>
+                                comprehensive expertise in working with APIs, including the ability to effectively
+                                access, retrieve, and handle requests. I am proficient in processing data, displaying it
+                                in user-friendly formats, and performing operations such as modifying and deleting data
+                                based on specific requirements. My skills ensure efficient and seamless integration,
+                                while maintaining a high level of data accuracy and security throughout the
+                                process</span>
                         </div>
                     </div>
                 </div>
@@ -216,9 +251,8 @@
                             <h2 class="text-white w-50 fw-bold sizeTitleServices" data-aos="flip-up">Design Responsive
                             </h2>
                             <span class="textJustify textNoHover" id="textSubstring" data-aos="flip-up">Responsive
-                                design ensures websites
-                                adapt
-                                seamlessly to different screen sizes and devices for an optimal user experience.</span>
+                                design ensures websites adapt seamlessly to different screen sizes and devices for an
+                                optimal user experience.</span>
                         </div>
                     </div>
                 </div>
@@ -231,10 +265,8 @@
                             <h2 class="text-white w-50 fw-bold sizeTitleServices" data-aos="flip-up">Website development
                             </h2>
                             <span class="textJustify textNoHover" id="textSubstring" data-aos="flip-up">Website
-                                development is the process
-                                of building
-                                and maintaining websites to ensure functionality, usability, and optimal
-                                performance.</span>
+                                development is the process of building and maintaining websites to ensure functionality,
+                                usability, and optimal performance.</span>
                         </div>
                     </div>
                 </div>
@@ -242,6 +274,130 @@
         </div>
     </section>
     <!-- end services -->
+    <!-- start protfolios -->
+    <section class="marginSection" id="protfolios">
+        <div class="container">
+            <div class="text-white text-center">
+                <div class="d-flex flex-column gap-3">
+                    <div data-aos="flip-up">
+                        <h2 class="d-inline-block position-relative fw-bold colorOrange titleAboutMe">PROTFOLIOS</h2>
+                    </div>
+                    <h3 class="sizeTextServices" data-aos="flip-up">Selected Work</h3>
+                </div>
+            </div>
+            <div class="row rowGap mt-5">
+                <div class="col-12 col-lg-8">
+                    <div class="hoverAbsoluteBottomAndTop position-relative overflow-hidden">
+                        <a href="https://github.com/momenalzebda03/dalilStationControlPanel" target="_blank"
+                            class="position-absolute p-4 rounded-circle divProtfoliosTop">
+                            <img src="assets/images/arrawRight.svg" alt="" class="w-100">
+                        </a>
+                        <img src="assets/images/portfoliosDlil.png" alt="" class="rounded-4 imageProtfolios">
+                        <div class="px-5 position-absolute divProtfoliosBttom text-white">
+                            <h2>DALIL STATION</h2>
+                            <span class="d-inline-block w-100 textJustify">The Station Guide platform was
+                                developed and the control panel was built by a leading Kuwaiti company. I played a key
+                                role in enhancing the project by implementing language
+                                modifications and customizing its features. Additionally, I successfully managed direct
+                                interactions with the server, ensuring seamless performance and integration. My
+                                contribution significantly improved the overall functionality, providing an optimized
+                                user experience.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="hoverAbsoluteBottomAndTop position-relative overflow-hidden">
+                        <a href="https://github.com/momenalzebda03/Rahmet" target="_blank"
+                            class="position-absolute p-4 rounded-circle divProtfoliosTop">
+                            <img src="assets/images/arrawRight.svg" alt="" class="w-100">
+                        </a>
+                        <img src="assets/images/portfoliosRahma.png" alt="" class="rounded-4 imageProtfolios">
+                        <div class="px-5 position-absolute divProtfoliosBttom text-white">
+                            <h2>RAHMAT</h2>
+                            <span class="d-inline-block w-100 textJustify">The project is developed using a Vue.js
+                                framework, allowing for smooth and efficient API integration. I have ensured that the
+                                system is easily adjustable and flexible, providing seamless updates and maintenance at
+                                any time. This approach ensures high performance, scalability and long-term
+                                sustainability, making the platform adaptable to future needs and ensuring an excellent
+                                user experience consistently knowing that the site supports languages.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="hoverAbsoluteBottomAndTop position-relative overflow-hidden">
+                        <a href="https://edu-story.com/" class="position-absolute p-4 rounded-circle divProtfoliosTop"
+                            target="_blank">
+                            <img src="assets/images/arrawRight.svg" alt="" class="w-100">
+                        </a>
+                        <img src="assets/images/portfoliosEduStory.png" alt="" class="rounded-4 imageProtfolios">
+                        <div class="px-5 position-absolute divProtfoliosBttom text-white">
+                            <h2>EDU STORY</h2>
+                            <span class="d-inline-block w-100 textJustify">The project was successfully completed, with
+                                all the page content dynamically fetched from the dashboard. This setting ensures that
+                                you change in a correct way and deal with the server in the site and the team</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="hoverAbsoluteBottomAndTop position-relative overflow-hidden">
+                        <a href="https://github.com/momenalzebda03/wteen"
+                            class="position-absolute p-4 rounded-circle divProtfoliosTop" target="_blank">
+                            <img src="assets/images/arrawRight.svg" alt="" class="w-100">
+                        </a>
+                        <img src="assets/images/portfoliosWteen.png" alt="" class="rounded-4 imageProtfolios">
+                        <div class="px-5 position-absolute divProtfoliosBttom text-white">
+                            <h2>WTEEN</h2>
+                            <span class="d-inline-block w-100 textJustify">The project was successfully completed in
+                                collaboration with a leading Saudi company, optimizing the site’s overall performance.
+                                We enhanced the efficiency of data transmission between requests and delivery, ensuring
+                                smoother interactions and faster load times. This improvement not only elevates the user
+                                experience but also ensures reliability and responsiveness across all aspects of the
+                                site, making it more efficient and scalable for future growth.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end protfolios -->
+    <!-- start footer -->
+    <footer class="bg-black mt-5 py-5" id="contact">
+        <div class="container">
+            <div class="text-center text-white">
+                <div class="position-relative d-inline-block borderBottom">
+                    <h2>Get In Touch With Me</h2>
+                </div>
+                <div class="d-flex flex-column gap-3 margintopEmail">
+                    <div>
+                        <span>momen07996@gmail.com</span>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <ul class="list-unstyled d-flex flex-wrap gap-3 m-0">
+                            <li>
+                                <a href="">
+                                    <img src="assets/images/linkedIn.svg" alt="" class="rounded-3 sizeIconFooter">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="assets/images/wattsh.svg" alt="" class="rounded-3 sizeIconFooter">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="assets/images/github.svg" alt="" class="rounded-3 sizeIconFooter">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>Momen Alzibda © 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
     <!-- start arrawTop -->
     <div class="position-fixed arrawTop rounded-4 px-3 py-3" onclick="scrollToTopArraw()">
         <img src="assets/images/arrawWhite.svg" alt="" class="imageArrawArotate">
