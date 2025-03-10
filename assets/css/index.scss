@@ -516,6 +516,10 @@ body footer div div .margintopEmail div ul li .sizeIconFooter {
     height: 30px;
 }
 
+body footer div div .margintopEmail .emailLowercase {
+    text-transform: lowercase;
+}
+
 // end footer
 // start media
 @media (max-width: 1199px) and (min-width: 990px) {
