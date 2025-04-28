@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="dist/css/index.css">
-    <link rel="stylesheet" href="assest/css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.0/dist/jquery.fancybox.min.css" />
     <title>MOMEN ALZEBDA</title>
 </head>
 
@@ -292,7 +292,10 @@
                             class="mouse position-absolute p-4 rounded-circle divProtfoliosTop">
                             <img src="assets/images/arrawRight.svg" alt="" class="w-100">
                         </a>
-                        <img src="assets/images/portfoliosDlil.png" alt="" class="rounded-4 imageProtfolios">
+                        <a href="assets/images/portfoliosDlil.png" data-fancybox="gallery"
+                            data-caption="project dailistection" class="linkIndexGallery">
+                            <img src="assets/images/portfoliosDlil.png" alt="image portfolios" class="imageProtfolios">
+                        </a>
                         <div class="px-5 position-absolute divProtfoliosBttom text-white">
                             <h2>DALIL STATION</h2>
                             <span class="d-inline-block w-100 textJustify">The Station Guide platform was
@@ -311,7 +314,10 @@
                             class="position-absolute p-4 rounded-circle divProtfoliosTop">
                             <img src="assets/images/arrawRight.svg" alt="" class="w-100">
                         </a>
-                        <img src="assets/images/portfoliosRahma.png" alt="" class="rounded-4 imageProtfolios">
+                        <a href="assets/images/portfoliosRahma.png" data-fancybox="gallery" data-caption="project Rahma"
+                            class="linkIndexGallery">
+                            <img src="assets/images/portfoliosRahma.png" alt="image portfolios" class="imageProtfolios">
+                        </a>
                         <div class="px-5 position-absolute divProtfoliosBttom text-white">
                             <h2>RAHMAT</h2>
                             <span class="d-inline-block w-100 textJustify">The project is developed using a Vue.js
@@ -323,27 +329,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-lg-4">
                     <div class="hoverAbsoluteBottomAndTop position-relative overflow-hidden">
                         <a href="https://edu-story.com/" class="position-absolute p-4 rounded-circle divProtfoliosTop"
                             target="_blank">
                             <img src="assets/images/arrawRight.svg" alt="" class="w-100">
                         </a>
-                        <img src="assets/images/portfoliosEduStory.png" alt="" class="rounded-4 imageProtfolios">
-                        <div class="px-5 position-absolute divProtfoliosBttom text-white">
-                            <h2>EDU STORY</h2>
-                            <span class="d-inline-block w-100 textJustify">The project was successfully completed, with
-                                all the page content dynamically fetched from the dashboard. This setting ensures that
-                                you change in a correct way and deal with the server in the site and the team</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-9">
-                    <div class="hoverAbsoluteBottomAndTop position-relative overflow-hidden">
-                        <a href="" target="_blank" class="mouse position-absolute p-4 rounded-circle divProtfoliosTop">
-                            <img src="assets/images/arrawRight.svg" alt="" class="w-100">
+                        <a href="assets/images/portfoliosWteen.png" data-fancybox="gallery" data-caption="project wteen"
+                            class="linkIndexGallery">
+                            <img src="assets/images/portfoliosWteen.png" alt="image portfolios" class="imageProtfolios">
                         </a>
-                        <img src="assets/images/portfoliosWteen.png" alt="" class="rounded-4 imageProtfolios">
                         <div class="px-5 position-absolute divProtfoliosBttom text-white">
                             <h2>WTEEN</h2>
                             <span class="d-inline-block w-100 textJustify">The project was successfully completed in
@@ -355,6 +350,29 @@
                                 user
                                 experience but also ensures reliability and responsiveness across all aspects of the
                                 site, making it more efficient and scalable for future growth.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="hoverAbsoluteBottomAndTop position-relative overflow-hidden">
+                        <a href="https://gleaming-pony-0d2fab.netlify.app/"
+                            class="position-absolute p-4 rounded-circle divProtfoliosTop" target="_blank">
+                            <img src="assets/images/arrawRight.svg" alt="" class="w-100">
+                        </a>
+                        <a href="assets/images/municipality.png" data-fancybox="gallery"
+                            data-caption="project municipality" class="linkIndexGallery">
+                            <img src="assets/images/municipality.png" alt="image portfolios" class="imageProtfolios">
+                        </a>
+                        <div class="px-5 position-absolute divProtfoliosBttom text-white">
+                            <h2>Municipality Project</h2>
+                            <span class="d-inline-block w-100 textJustify">The development of the project has been
+                                successfully completed, as the weather system and location within the website have been
+                                activated. A comprehensive and integrated platform has also been established for the
+                                municipality, which aims to showcase its events and projects, in addition to providing
+                                accurate and comprehensive details about various activities. The platform has been
+                                linked to Firebase services to ensure that data is provided directly and securely,
+                                contributing to improving the user experience and facilitating access to information
+                                anytime, anywhere.</span>
                         </div>
                     </div>
                 </div>
@@ -410,8 +428,16 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="assets/js/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.0/dist/jquery.fancybox.min.js"></script>
 
 <script>
+    $(document).ready(function () {
+        $('[data-fancybox="gallery"]').fancybox({
+            loop: true,
+            buttons: ['zoom', 'close']
+        });
+    });
+
     AOS.init({
         duration: 1200,
         once: false,
