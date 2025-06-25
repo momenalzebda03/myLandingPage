@@ -13,7 +13,6 @@ function scrollToBottom() {
 function animateNumber(element, start, end, duration, suffix = "") {
   let current = start;
   const increment = (end - start) / (duration / 50);
-
   function updateNumber() {
     current += increment;
     if (current >= end) {
@@ -87,30 +86,20 @@ const scrollToTopArraw = () => {
 $(window).on("scroll", function () {
   const scrollPos = $(window).scrollTop();
   const sectionTwoOffset = $("#about").offset().top;
-  if (scrollPos >= sectionTwoOffset) {
-    $(".arrawTop").addClass("show");
-  } else {
-    $(".arrawTop").removeClass("show");
-  }
+  scrollPos >= sectionTwoOffset
+    ? $(".arrawTop").addClass("show")
+    : $("arrawTop").removeClass("show");
 });
 
 var lastScrollTop = 0;
 var navbar = $(".navbar");
-
 $(window).on("scroll", function () {
   var scrollPos = $(this).scrollTop();
-
-  if (scrollPos > lastScrollTop) {
-    navbar.removeClass("visible").addClass("hidden");
-  } else {
-    navbar.removeClass("hidden").addClass("visible");
-  }
-
-  if (scrollPos >= 100) {
-    navbar.addClass("scroll-up");
-  } else {
-    navbar.removeClass("scroll-up");
-  }
-
+  scrollPos > lastScrollTop
+    ? navbar.removeClass("visible").addClass("hidden")
+    : navbar.removeClass("hidden").addClass("visible");
+  scrollPos >= 100
+    ? navbar.addClass("scroll-up")
+    : navbar.removeClass("scroll-up");
   lastScrollTop = scrollPos <= 0 ? 0 : scrollPos;
 });
