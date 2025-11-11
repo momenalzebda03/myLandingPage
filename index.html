@@ -1,446 +1,702 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="http://127.0.0.1:5500/assets/images/logo.svg">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="dist/css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.0/dist/jquery.fancybox.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/logo.svg" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="dist/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.0/dist/jquery.fancybox.min.css"
+    />
     <title>MOMEN ALZEBDA</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- start line image -->
     <div class="position-fixed w-100 lineImage">
-        <div class="container position-relative">
-            <img src="assets/images/Lines.svg" alt="" class="w-100">
-        </div>
+      <div class="container position-relative">
+        <img src="assets/images/Lines.svg" alt="" class="w-100" />
+      </div>
     </div>
     <!-- end line image -->
     <!-- start navbar -->
     <nav class="navbar navbar-expand-lg navbar-light w-100 bg-black py-3">
-        <div class="container">
-            <div class="d-lg-flex justify-content-between align-items-center w-100">
-                <div class="d-flex justify-content-between">
-                    <div class="navbar-toggler d-flex align-items-center border border-0 gap-2 mouse d-lg-none"
-                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                        <div class="d-flex flex-column gap-2 align-items-end position-relative mouse" id="clickMenu">
-                            <div class="bg-white position-absolute start-0 divMenu"></div>
-                            <div class="bg-white position-absolute start-0 divMenu"></div>
-                            <div class="bg-white position-absolute start-0 divMenu"></div>
-                        </div>
-                    </div>
-                    <a href="http://127.0.0.1:5500/index.html" class="nav-link">
-                        <img src="assets/images/logo.svg" alt="" class="sizeLogo">
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav d-flex gap-lg-5 align-items-lg-center justify-content-lg-center">
-                        <li><a class="nav-link active hoverLink" href="#home">home</a></li>
-                        <li><a class="nav-link hoverLink" href="#about">about</a></li>
-                        <li><a class="nav-link hoverLink" href="#services">services</a></li>
-                        <li><a class="nav-link hoverLink" href="#protfolios">portfolios</a></li>
-                        <li><a class="nav-link hoverLink" href="#contact">contact</a></li>
-                    </ul>
-                    <div class="d-inline-block d-lg-none">
-                        <a href="https://docs.google.com/document/d/192Lt5iQCjS4pF4greyv0r7bFJYfOgVTjEfPjmClm__4/edit?tab=t.0"
-                            class="overflow-hidden rounded-5 position-relative d-flex justify-content-center align-items-center nav-link fw-bold px-5 styleHireMe">
-                            <span class="position-relative">hire me</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="d-none d-lg-inline-block">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        class="overflow-hidden mt-3 rounded-5 position-relative d-flex justify-content-center align-items-center nav-link fw-bold px-5 styleHireMe">
-                        <span class="position-relative">hire me</span>
-                    </button>
-                </div>
+      <div class="container">
+        <div class="d-lg-flex justify-content-between align-items-center w-100">
+          <div class="d-flex justify-content-between">
+            <div
+              class="navbar-toggler d-flex align-items-center border border-0 gap-2 mouse d-lg-none"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+            >
+              <div
+                class="d-flex flex-column gap-2 align-items-end position-relative mouse"
+                id="clickMenu"
+              >
+                <div class="bg-white position-absolute start-0 divMenu"></div>
+                <div class="bg-white position-absolute start-0 divMenu"></div>
+                <div class="bg-white position-absolute start-0 divMenu"></div>
+              </div>
             </div>
+            <a
+              href="http://127.0.0.1:5500/index.html"
+              class="nav-link"
+              title="Momen"
+            >
+              <img src="assets/images/logo.svg" alt="" class="sizeLogo" />
+            </a>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="navbar-nav d-flex gap-lg-5 align-items-lg-center justify-content-lg-center"
+            >
+              <li title="Home">
+                <a class="nav-link active hoverLink" href="#home">Home</a>
+              </li>
+              <li title="About">
+                <a class="nav-link hoverLink" href="#about">About</a>
+              </li>
+              <li title="Services">
+                <a class="nav-link hoverLink" href="#services">Services</a>
+              </li>
+              <li title="Portfolios">
+                <a class="nav-link hoverLink" href="#protfolios">Portfolios</a>
+              </li>
+              <li title="Contact">
+                <a class="nav-link hoverLink" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="d-inline-block d-lg-none">
+              <a
+                href="https://docs.google.com/document/d/192Lt5iQCjS4pF4greyv0r7bFJYfOgVTjEfPjmClm__4/edit?tab=t.0"
+                class="overflow-hidden rounded-5 position-relative d-flex justify-content-center align-items-center nav-link fw-bold px-5 styleHireMe"
+              >
+                <span class="position-relative">hire me</span>
+              </a>
+            </div>
+          </div>
+          <div class="d-none d-lg-inline-block">
+            <button
+              title="Hire Me"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              class="overflow-hidden mt-3 rounded-5 position-relative d-flex justify-content-center align-items-center nav-link fw-bold px-5 styleHireMe"
+            >
+              <span class="position-relative">hire me</span>
+            </button>
+          </div>
         </div>
+      </div>
     </nav>
     <!-- end navbar -->
     <!-- start modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content bg-black text-white">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">send me</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-black text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">send me</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              target="_blank"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="1cdfeae3-a9de-4051-b8f7-dfb7b1d1f767"
+              />
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control styleInput"
+                  placeholder="Enter your name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control styleInput"
+                  placeholder="Enter your email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control styleInput"
+                  name="message"
+                  rows="3"
+                  placeholder="Enter your message"
+                  required
+                ></textarea>
+              </div>
+              <div class="modal-footer">
+                <div class="d-flex align-items-center gap-3">
+                  <button
+                    type="button"
+                    class="btn btn-secondary rounded-5 px-5 buttonClose"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <div class="d-inline-block">
+                    <button
+                      type="submit"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      class="overflow-hidden text-black rounded-5 position-relative d-flex justify-content-center align-items-center nav-link fw-bold px-5 styleHireMe"
+                    >
+                      <span class="position-relative">hire me</span>
+                    </button>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <form action="https://api.web3forms.com/submit" method="POST" target="_blank">
-                        <input type="hidden" name="access_key" value="1cdfeae3-a9de-4051-b8f7-dfb7b1d1f767">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control styleInput" placeholder="Enter your name" name="name"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control styleInput" placeholder="Enter your email"
-                                name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control styleInput" name="message" rows="3"
-                                placeholder="Enter your message" required></textarea>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="d-flex align-items-center gap-3">
-                                <button type="button" class="btn btn-secondary rounded-5 px-5 buttonClose"
-                                    data-bs-dismiss="modal">Close</button>
-                                <div class="d-inline-block">
-                                    <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                        class="overflow-hidden text-black rounded-5 position-relative d-flex justify-content-center align-items-center nav-link fw-bold px-5 styleHireMe">
-                                        <span class="position-relative">hire me</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
     <!-- end modal -->
     <!-- start main -->
     <main class="d-flex align-items-lg-center" id="home">
-        <div class="container">
-            <div class="row mx-0 align-items-center flex-column-reverse align-items-center flex-md-row">
-                <div class="col-12 col-md-6">
-                    <div class="d-flex flex-column gap-4">
-                        <div>
-                            <h2 class="text-white sizeMainTitle" data-aos="fade-up">Front-End Developer Vue.js<span
-                                    class="movementHasn d-inline-block">👋</span></h2>
-                        </div>
-                        <div>
-                            <span class="text-white sizeSpanText" data-aos="fade-up">Hi, I'm Moamen AlZebdeh. A
-                                passionate
-                                Front-end vue Developer and Software Engineer based in Palestine 📍.
-                            </span>
-                        </div>
-                        <div>
-                            <a href="MomenAlzibdaCV.pdf" download="MomenAlzibdaCV.pdf"
-                                class="position-relative overflow-hidden nav-link d-inline-block buttonMain rounded-5">
-                                <div class="d-flex gap-3 align-items-center justify-content-between px-4">
-                                    <div class="beforeOrangeArraow">
-                                        <img src="assets/images/arraowUp.svg" alt="" class="position-relative">
-                                    </div>
-                                    <div class="position-relative">
-                                        <span>Personal CV</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+      <div class="container">
+        <div
+          class="row mx-0 align-items-center flex-column-reverse align-items-center flex-md-row"
+        >
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column gap-4">
+              <div>
+                <h2 class="text-white sizeMainTitle" data-aos="fade-up">
+                  Front-End Developer Vue.js And Nuxt.js<span
+                    class="movementHasn d-inline-block"
+                    >👋</span
+                  >
+                </h2>
+              </div>
+              <div>
+                <span class="text-white sizeSpanText" data-aos="fade-up"
+                  >Hi, I'm Momen Alzebda. A passionate Front-end Vue.js And
+                  Nuxt.js Developer and Software Engineer based in Palestine 📍.
+                </span>
+              </div>
+              <div>
+                <a
+                  href="MomenAlzibdaCV.pdf"
+                  download="MomenAlzibdaCV.pdf"
+                  class="position-relative overflow-hidden nav-link d-inline-block buttonMain rounded-5"
+                >
+                  <div
+                    class="d-flex gap-3 align-items-center justify-content-between px-4"
+                  >
+                    <div class="beforeOrangeArraow">
+                      <img
+                        src="assets/images/arraowUp.svg"
+                        alt=""
+                        class="position-relative"
+                      />
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-5 px-0">
-                    <div class="position-relative beforeAndAfterImage" data-aos="fade-down">
-                        <img src="assets/images/vuejs.svg" alt="" class="position-absolute iconVueJs">
-                        <img src="assets/images/me.png" alt="" class="sizeImageMe">
-                        <img src="assets/images/bootstrap.png" alt="" class="position-absolute iconBottstrap">
+                    <div class="position-relative">
+                      <span>Personal CV</span>
                     </div>
-                </div>
-                <div class="col-1 d-none d-lg-flex justify-content-end">
-                    <div class="d-inline-block position-relative" data-aos="fade-down">
-                        <div
-                            class="d-flex justify-content-center rounded-5 position-absolute bottom-0 styleDivMainRight">
-                            <div class="mouseArrawUp position-absolute mouse" onclick="scrollToBottom()">
-                                <img src="assets/images/arrowDown.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  </div>
+                </a>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 px-0">
+            <div
+              class="position-relative beforeAndAfterImage"
+              data-aos="fade-down"
+            >
+              <img
+                src="assets/images/vuejs.svg"
+                alt=""
+                class="position-absolute iconVueJs"
+              />
+              <img src="assets/images/me.png" alt="" class="sizeImageMe" />
+              <img
+                src="assets/images/bootstrap.png"
+                alt=""
+                class="position-absolute iconBottstrap"
+              />
+            </div>
+          </div>
+          <div class="col-1 d-none d-lg-flex justify-content-end">
+            <div class="d-inline-block position-relative" data-aos="fade-down">
+              <div
+                class="d-flex justify-content-center rounded-5 position-absolute bottom-0 styleDivMainRight"
+              >
+                <div
+                  class="mouseArrawUp position-absolute mouse"
+                  onclick="scrollToBottom()"
+                >
+                  <img src="assets/images/arrowDown.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
     <!-- end main -->
     <!-- start numbers -->
     <section>
-        <div class="container">
-            <div class="row gap-5 gap-sm-0 mx-0 px-3 bg-black rounded-4 overflow-hidden py-5">
-                <div class="col col-md-4" data-aos="fade-right">
-                    <div class="text-white text-center d-flex flex-column gap-2">
-                        <h2 class="sizeTitleNumber">Customer satisfaction</h2>
-                        <span class="fw-bold colorOrangeAndNumber" data-target="90%">0</span>
-                    </div>
-                </div>
-                <div class="col col-md-4">
-                    <div class="text-white text-center d-flex flex-column gap-2">
-                        <h2 class="sizeTitleNumber">Completed projects</h2>
-                        <span class="fw-bold colorOrangeAndNumber" data-target="85+">0</span>
-                    </div>
-                </div>
-                <div class="col col-md-4" data-aos="fade-left">
-                    <div class="text-white text-center d-flex flex-column gap-2">
-                        <h2 class="sizeTitleNumber">Years of experience</h2>
-                        <span class="fw-bold colorOrangeAndNumber" data-target="3+">0</span>
-                    </div>
-                </div>
+      <div class="container">
+        <div
+          class="row gap-5 gap-sm-0 mx-0 px-3 bg-black rounded-4 overflow-hidden py-5"
+        >
+          <div class="col col-md-4" data-aos="fade-right">
+            <div class="text-white text-center d-flex flex-column gap-2">
+              <h2 class="sizeTitleNumber">Customer satisfaction</h2>
+              <span class="fw-bold colorOrangeAndNumber" data-target="90%"
+                >0</span
+              >
             </div>
+          </div>
+          <div class="col col-md-4">
+            <div class="text-white text-center d-flex flex-column gap-2">
+              <h2 class="sizeTitleNumber">Completed projects</h2>
+              <span class="fw-bold colorOrangeAndNumber" data-target="85+"
+                >0</span
+              >
+            </div>
+          </div>
+          <div class="col col-md-4" data-aos="fade-left">
+            <div class="text-white text-center d-flex flex-column gap-2">
+              <h2 class="sizeTitleNumber">Years of experience</h2>
+              <span class="fw-bold colorOrangeAndNumber" data-target="3+"
+                >0</span
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- end numbers -->
     <!-- start about me -->
     <section id="about">
-        <div class="container">
-            <div class="row gap-3 gap-md-0 align-items-center">
-                <div class="col-12 col-md-6">
-                    <div class="d-flex flex-column gap-3">
-                        <div data-aos="fade-up">
-                            <h2 class="d-inline-block position-relative fw-bold colorOrange titleAboutMe ms-4">ABOUT ME
-                            </h2>
-                        </div>
-                        <span class="textAboutMe textJustify text-white" data-aos="fade-up">Moamen Alzeba is a skilled
-                            Web Developer
-                            with over two years of experience in Front-End Development. He specializes in html, css,
-                            scss,
-                            JavaScript, vue & nuxt, creating dynamic, user-friendly websites. Passionate about
-                            innovation, he focuses on performance optimization and delivering seamless user experiences.
-                            🚀</span>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="d-flex justify-content-end" data-aos="fade-down">
-                        <img src="assets/images/laptop.png" alt="" class="sizeImageLaptop">
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row gap-3 gap-md-0 align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column gap-3">
+              <div data-aos="fade-up">
+                <h2
+                  class="d-inline-block position-relative fw-bold colorOrange titleAboutMe ms-4"
+                >
+                  ABOUT ME
+                </h2>
+              </div>
+              <span
+                class="textAboutMe textJustify text-white"
+                data-aos="fade-up"
+                >Momen Alzebda is a skilled Web Developer with over two years of
+                experience in Front-End Development. He specializes in HTML,
+                CSS, SCSS, Tailwind CSS, Bootatrap, JavaScript, Vue.js &
+                Nuxt.ks, creating dynamic, user-friendly websites. Passionate
+                about innovation, he focuses on performance optimization and
+                delivering seamless user experiences. 🚀</span
+              >
             </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-end" data-aos="fade-down">
+              <img
+                src="assets/images/laptop.png"
+                alt=""
+                class="sizeImageLaptop"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- end about me -->
     <!-- start services -->
     <section id="services">
-        <div class="container">
-            <div class="text-white text-center">
-                <div class="d-flex flex-column gap-3">
-                    <div data-aos="flip-up">
-                        <h2 class="d-inline-block position-relative fw-bold colorOrange titleAboutMe">SERVICES
-                        </h2>
-                    </div>
-                    <h3 class="sizeTextServices" data-aos="flip-up">Making Magic Happen for Your Business</h3>
-                </div>
+      <div class="container">
+        <div class="text-white text-center">
+          <div class="d-flex flex-column gap-3">
+            <div data-aos="flip-up">
+              <h2
+                class="d-inline-block position-relative fw-bold colorOrange titleAboutMe"
+              >
+                SERVICES
+              </h2>
             </div>
-            <div class="row rowGap py-5">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="bg-black p-4 rounded-4 d-flex flex-column gap-5 overflow-auto heightServices">
-                        <div>
-                            <img src="assets/images/services2.svg" alt="" class="sizeImageServes">
-                        </div>
-                        <div class="d-flex flex-column gap-3">
-                            <h2 class="text-white w-50 fw-bold sizeTitleServices" data-aos="flip-up">Ability to handle
-                                API</h2>
-                            <span class="textJustify textNoHover" id="textSubstring" data-aos="flip-up">I possess
-                                comprehensive expertise in working with APIs, including the ability to effectively
-                                access, retrieve, and handle requests. I am proficient in processing data, displaying it
-                                in user-friendly formats, and performing operations such as modifying and deleting data
-                                based on specific requirements. My skills ensure efficient and seamless integration,
-                                while maintaining a high level of data accuracy and security throughout the
-                                process</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="bg-black p-4 rounded-4 d-flex flex-column gap-5 overflow-auto heightServices">
-                        <div>
-                            <img src="assets/images/services3.svg" alt="" class="sizeImageServes">
-                        </div>
-                        <div class="d-flex flex-column gap-3">
-                            <h2 class="text-white w-50 fw-bold sizeTitleServices" data-aos="flip-up">Design Responsive
-                            </h2>
-                            <span class="textJustify textNoHover" id="textSubstring" data-aos="flip-up">Responsive
-                                design ensures websites adapt seamlessly to different screen sizes and devices for an
-                                optimal user experience.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="bg-black p-4 rounded-4 d-flex flex-column gap-5 overflow-auto heightServices">
-                        <div>
-                            <img src="assets/images/services2.svg" alt="" class="sizeImageServes">
-                        </div>
-                        <div class="d-flex flex-column gap-3">
-                            <h2 class="text-white w-50 fw-bold sizeTitleServices" data-aos="flip-up">Website development
-                            </h2>
-                            <span class="textJustify textNoHover" id="textSubstring" data-aos="flip-up">Website
-                                development is the process of building and maintaining websites to ensure functionality,
-                                usability, and optimal performance.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h3 class="sizeTextServices" data-aos="flip-up">
+              Making Magic Happen for Your Business
+            </h3>
+          </div>
         </div>
+        <div class="row rowGap py-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="bg-black p-4 rounded-4 d-flex flex-column gap-5 h-100 heightServices"
+            >
+              <div>
+                <img
+                  src="assets/images/services2.svg"
+                  alt=""
+                  class="sizeImageServes"
+                />
+              </div>
+              <div class="d-flex flex-column gap-3">
+                <h2
+                  class="text-white w-100 fw-bold sizeTitleServices"
+                  data-aos="flip-up"
+                >
+                  Ability to handle API
+                </h2>
+                <span
+                  class="textJustify textNoHover"
+                  id="textSubstring"
+                  data-aos="flip-up"
+                  >I work flexibly and efficiently with APIs and back-end
+                  systems to enable seamless integration between platforms and
+                  effective data exchange. I manage and execute requests and
+                  process data (read, create, update, delete) with precision,
+                  presenting it in clear, easy-to-understand formats. I focus on
+                  ensuring data quality and security at every step to deliver
+                  reliable, fast performance that enhances user experience and
+                  improves system efficiency</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="bg-black p-4 rounded-4 d-flex flex-column gap-5 h-100 heightServices"
+            >
+              <div>
+                <img
+                  src="assets/images/services3.svg"
+                  alt=""
+                  class="sizeImageServes"
+                />
+              </div>
+              <div class="d-flex flex-column gap-3">
+                <h2
+                  class="text-white w-100 fw-bold sizeTitleServices"
+                  data-aos="flip-up"
+                >
+                  Design Responsive
+                </h2>
+                <span
+                  class="textJustify textNoHover"
+                  id="textSubstring"
+                  data-aos="flip-up"
+                  >Responsive design ensures websites adapt seamlessly to
+                  different screen sizes and devices for an optimal user
+                  experience.</span
+                >
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="bg-black p-4 rounded-4 d-flex flex-column gap-5 h-100 heightServices"
+            >
+              <div>
+                <img
+                  src="assets/images/ImprovingPerformance.png"
+                  alt=""
+                  class="sizeImageServes"
+                />
+              </div>
+              <div class="d-flex flex-column gap-3">
+                <h2
+                  class="text-white w-100 fw-bold sizeTitleServices"
+                  data-aos="flip-up"
+                >
+                  Improving performance and speed
+                </h2>
+                <span
+                  class="textJustify textNoHover"
+                  id="textSubstring"
+                  data-aos="flip-up"
+                  >I focus on front-end performance optimization and
+                  responsiveness to ensure a smooth, efficient user experience.
+                  By minimizing load times and refining code and interactive
+                  elements, I deliver fast, lightweight, and responsive websites
+                  across all devices. Front-end speed isn’t just a technical
+                  detail—it’s what keeps users engaged and satisfied.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end services -->
     <!-- start protfolios -->
     <section id="protfolios">
-        <div class="container">
-            <div class="text-white text-center">
-                <div class="d-flex flex-column gap-3">
-                    <div data-aos="flip-up">
-                        <h2 class="d-inline-block position-relative fw-bold colorOrange titleAboutMe">PROTFOLIOS</h2>
-                    </div>
-                    <h3 class="sizeTextServices" data-aos="flip-up">Selected Work</h3>
-                </div>
+      <div class="container">
+        <div class="text-white text-center">
+          <div class="d-flex flex-column gap-3">
+            <div data-aos="flip-up">
+              <h2
+                class="d-inline-block position-relative fw-bold colorOrange titleAboutMe"
+              >
+                PROTFOLIOS
+              </h2>
             </div>
-            <div class="row rowGap mt-5">
-                <div class="col-12 col-lg-8">
-                    <div class="hoverAbsoluteBottomAndTop position-relative overflow-hidden">
-                        <a href="https://heartfelt-longma-860165.netlify.app/login.html"
-                            class="mouse position-absolute p-4 rounded-circle divProtfoliosTop">
-                            <img src="assets/images/arrawRight.svg" alt="" class="w-100">
-                        </a>
-                        <a href="assets/images/portfoliosDlil.png" data-fancybox="gallery"
-                            data-caption="project dailistection" class="linkIndexGallery">
-                            <img src="assets/images/portfoliosDlil.png" alt="image portfolios"
-                                class="w-100 rounded-3 overflow-hidden imageProtfolios">
-                        </a>
-                        <div class="px-5 position-absolute divProtfoliosBttom text-white">
-                            <h2>DALIL STATION</h2>
-                            <span class="d-inline-block w-100 textJustify">The Station Guide platform was
-                                developed and the control panel was built by a leading Kuwaiti company. I played a key
-                                role in enhancing the project by implementing language
-                                modifications and customizing its features. Additionally, I successfully managed direct
-                                interactions with the server, ensuring seamless performance and integration. My
-                                contribution significantly improved the overall functionality, providing an optimized
-                                user experience.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="hoverAbsoluteBottomAndTop position-relative overflow-hidden">
-                        <a href="https://jolly-sherbet-2e4838.netlify.app/"
-                            class="position-absolute p-4 rounded-circle divProtfoliosTop" target="_blank">
-                            <img src="assets/images/arrawRight.svg" alt="" class="w-100">
-                        </a>
-                        <a href="assets/images/aboAta.png" data-fancybox="gallery" data-caption="project wteen"
-                            class="linkIndexGallery">
-                            <img src="assets/images/aboAta.png" alt="image portfolios"
-                                class="w-100 rounded-3 overflow-hidden imageProtfolios">
-                        </a>
-                        <div class="px-5 position-absolute divProtfoliosBttom text-white">
-                            <h2>Abu Eita cheese</h2>
-                            <span class="d-inline-block w-100 textJustify">I worked on the "Abu Eita Cheeses" project to
-                                display products with filtering, using Tailwind CSS.
-                                Tasks included Arabic language support, color coordination, and improved responsive
-                                design and text for a more attractive interface.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="hoverAbsoluteBottomAndTop position-relative overflow-hidden">
-                        <a href="https://unique-gumption-34fbc7.netlify.app/"
-                            class="position-absolute p-4 rounded-circle divProtfoliosTop" target="_blank">
-                            <img src="assets/images/arrawRight.svg" alt="" class="w-100">
-                        </a>
-                        <a href="assets/images/municipality.png" data-fancybox="gallery"
-                            data-caption="project municipality" class="linkIndexGallery">
-                            <img src="assets/images/municipality.png" alt="image portfolios"
-                                class="w-100 rounded-3 overflow-hidden imageProtfolios">
-                        </a>
-                        <div class="px-5 position-absolute divProtfoliosBttom text-white">
-                            <h2>Municipality Project</h2>
-                            <span class="d-inline-block w-100 textJustify">The development of the project has been
-                                successfully completed, as the weather system and location within the website have been
-                                activated. A comprehensive and integrated platform has also been established for the
-                                municipality, which aims to showcase its events and projects, in addition to providing
-                                accurate and comprehensive details about various activities. The platform has been
-                                linked to Firebase services to ensure that data is provided directly and securely,
-                                contributing to improving the user experience and facilitating access to information
-                                anytime, anywhere.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-8">
-                    <div class="hoverAbsoluteBottomAndTop position-relative overflow-hidden">
-                        <a href="https://gilded-starship-e7b964.netlify.app/#"
-                            class="position-absolute p-4 rounded-circle divProtfoliosTop" target="_blank">
-                            <img src="assets/images/arrawRight.svg" alt="" class="w-100">
-                        </a>
-                        <a href="assets/images/portfoliosWteen.png" data-fancybox="gallery"
-                            data-caption="project municipality" class="linkIndexGallery">
-                            <img src="assets/images/portfoliosWteen.png" alt="image portfolios"
-                                class="w-100 rounded-3 overflow-hidden imageProtfolios">
-                        </a>
-                        <div class="px-5 position-absolute divProtfoliosBttom text-white">
-                            <h2>wteen proejct</h2>
-                            <span class="d-inline-block w-100 textJustify">Creating a ween platform for shopping
-                                management, I worked on this platform on the consistency of colors and effectiveness in
-                                the multiplicity of pages, knowing that it was worked on with a professional team from a
-                                technical point of view and with Saudi Arabia.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h3 class="sizeTextServices" data-aos="flip-up">Selected Work</h3>
+          </div>
         </div>
+        <div class="row rowGap mt-5">
+          <div class="col-12 col-lg-8">
+            <div
+              class="hoverAbsoluteBottomAndTop position-relative overflow-hidden"
+            >
+              <a
+                href="https://market-rise.online/"
+                class="mouse position-absolute p-4 rounded-circle divProtfoliosTop"
+              >
+                <img src="assets/images/arrawRight.svg" alt="" class="w-100" />
+              </a>
+              <a
+                href="assets/images/riseMarketing.png"
+                data-fancybox="gallery"
+                data-caption="Rise Marketing platform"
+                class="linkIndexGallery"
+              >
+                <img
+                  src="assets/images/riseMarketing.png"
+                  alt="image portfolios"
+                  class="w-100 rounded-3 overflow-hidden imageProtfolios"
+                />
+              </a>
+              <div class="px-5 position-absolute divProtfoliosBttom text-white">
+                <h2>Rise marketing platform</h2>
+                <span class="d-inline-block w-100 textJustify"
+                  >Built the Rise marketing platform in collaboration with Fada
+                  Tech, writing clean, maintainable code, implementing email
+                  workflows, and coordinating work via GitHub for efficient
+                  version control.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div
+              class="hoverAbsoluteBottomAndTop position-relative overflow-hidden"
+            >
+              <a
+                href="https://ibrahimalbalushi.com/en"
+                class="position-absolute p-4 rounded-circle divProtfoliosTop"
+                target="_blank"
+              >
+                <img src="assets/images/arrawRight.svg" alt="" class="w-100" />
+              </a>
+              <a
+                href="assets/images/Ibrahim.png"
+                data-fancybox="gallery"
+                data-caption="Ibrahim"
+                class="linkIndexGallery"
+              >
+                <img
+                  src="assets/images/Ibrahim.png"
+                  alt="image portfolios"
+                  class="w-100 rounded-3 overflow-hidden imageProtfolios"
+                />
+              </a>
+              <div class="px-5 position-absolute divProtfoliosBttom text-white">
+                <h2>Ibrahim</h2>
+                <span class="d-inline-block w-100 textJustify"
+                  >We built a modern, elegant website for the violinist Ibrahim
+                  to showcase his music, courses, and artistic journey —
+                  combining beauty, speed, and smooth performance to reflect his
+                  talent in a professional way.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div
+              class="hoverAbsoluteBottomAndTop position-relative overflow-hidden"
+            >
+              <a
+                href="https://rhmacharity.com/en"
+                class="position-absolute p-4 rounded-circle divProtfoliosTop"
+                target="_blank"
+              >
+                <img src="assets/images/arrawRight.svg" alt="" class="w-100" />
+              </a>
+              <a
+                href="assets/images/rahma.png"
+                data-fancybox="gallery"
+                data-caption="Rahma"
+                class="linkIndexGallery"
+              >
+                <img
+                  src="assets/images/rahma.png"
+                  alt="image portfolios"
+                  class="w-100 rounded-3 overflow-hidden imageProtfolios"
+                />
+              </a>
+              <div class="px-5 position-absolute divProtfoliosBttom text-white">
+                <h2>Rhmacharity Project</h2>
+                <span class="d-inline-block w-100 textJustify"
+                  >Built the Rahma & Ihsan Association website from scratch,
+                  covering both frontend and backend with full API integration.
+                  Added multilingual support, improved SEO, and designed a
+                  responsive, user-friendly interface. Integrated secure online
+                  payments and donations, and handled ongoing updates and
+                  feature improvements.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div
+              class="hoverAbsoluteBottomAndTop position-relative overflow-hidden"
+            >
+              <a
+                href="https://gilded-starship-e7b964.netlify.app/#"
+                class="position-absolute p-4 rounded-circle divProtfoliosTop"
+                target="_blank"
+              >
+                <img src="assets/images/arrawRight.svg" alt="" class="w-100" />
+              </a>
+              <a
+                href="assets/images/portfoliosWteen.png"
+                data-fancybox="gallery"
+                data-caption="Wteen"
+                class="linkIndexGallery"
+              >
+                <img
+                  src="assets/images/portfoliosWteen.png"
+                  alt="image portfolios"
+                  class="w-100 rounded-3 overflow-hidden imageProtfolios"
+                />
+              </a>
+              <div class="px-5 position-absolute divProtfoliosBttom text-white">
+                <h2>wteen proejct</h2>
+                <span class="d-inline-block w-100 textJustify"
+                  >Creating a ween platform for shopping management, I worked on
+                  this platform on the consistency of colors and effectiveness
+                  in the multiplicity of pages, knowing that it was worked on
+                  with a professional team from a technical point of view and
+                  with Saudi Arabia.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end protfolios -->
     <!-- start footer -->
     <footer class="bg-black mt-5 py-5" id="contact">
-        <div class="container">
-            <div class="text-center text-white">
-                <div class="position-relative d-inline-block borderBottom">
-                    <h2>Get In Touch With Me</h2>
-                </div>
-                <div class="d-flex flex-column gap-3 margintopEmail">
-                    <div class="emailLowercase">
-                        <span>momen07996@gmail.com</span>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <ul class="list-unstyled d-flex flex-wrap gap-3 m-0">
-                            <li>
-                                <a href="https://www.linkedin.com/in/momen-alzibda-b48a7626b/" target="_blank">
-                                    <img src="assets/images/linkedIn.svg" alt="" class="rounded-3 sizeIconFooter">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://wa.me/+972592613795" target="_blank">
-                                    <img src="assets/images/wattsh.svg" alt="" class="rounded-3 sizeIconFooter">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/momenalzebda03" target="_blank">
-                                    <img src="assets/images/github.svg" alt="" class="rounded-3 sizeIconFooter">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <span>Momen Alzibda © 2025</span>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="text-center text-white">
+          <div class="position-relative d-inline-block borderBottom">
+            <h2>Get In Touch With Me</h2>
+          </div>
+          <div class="d-flex flex-column gap-3 margintopEmail">
+            <div class="emailLowercase">
+              <span>momen07996@gmail.com</span>
             </div>
+            <div class="d-flex justify-content-center">
+              <ul class="list-unstyled d-flex flex-wrap gap-3 m-0">
+                <li title="linkedIn">
+                  <a
+                    href="https://www.linkedin.com/in/momen-alzibda-b48a7626b/"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/images/linkedIn.svg"
+                      alt=""
+                      class="rounded-3 sizeIconFooter"
+                    />
+                  </a>
+                </li>
+                <li title="WhatsApp">
+                  <a href="https://wa.me/+972592613795" target="_blank">
+                    <img
+                      src="assets/images/wattsh.svg"
+                      alt=""
+                      class="rounded-3 sizeIconFooter"
+                    />
+                  </a>
+                </li>
+                <li title="github">
+                  <a href="https://github.com/momenalzebda03" target="_blank">
+                    <img
+                      src="assets/images/github.svg"
+                      alt=""
+                      class="rounded-3 sizeIconFooter"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <span>Momen Alzibda © 2025</span>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- end footer -->
     <!-- start arrawTop -->
-    <div class="position-fixed arrawTop rounded-4 px-3 py-3" onclick="scrollToTopArraw()">
-        <img src="assets/images/arrawWhite.svg" alt="" class="imageArrawArotate">
+    <div
+      class="position-fixed arrawTop rounded-4 px-3 py-3"
+      onclick="scrollToTopArraw()"
+    >
+      <img
+        src="assets/images/arrawWhite.svg"
+        alt=""
+        class="imageArrawArotate"
+      />
     </div>
     <!-- end arraw top -->
-</body>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/index.js"></script>
-<script src="assets/js/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.0/dist/jquery.fancybox.min.js"></script>
+  </body>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.0/dist/jquery.fancybox.min.js"></script>
 
-<script>
+  <script>
     $(document).ready(function () {
-        $('[data-fancybox="gallery"]').fancybox({
-            loop: true,
-            buttons: ['zoom', 'close']
-        });
+      $('[data-fancybox="gallery"]').fancybox({
+        loop: true,
+        buttons: ["zoom", "close"],
+      });
     });
 
     AOS.init({
-        duration: 1200,
-        once: false,
-        offset: 200,
+      duration: 1200,
+      once: false,
+      offset: 200,
     });
-</script>
-
+  </script>
 </html>
