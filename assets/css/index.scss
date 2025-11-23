@@ -1,574 +1,608 @@
-@import "colors";
+@use "colors";
 
 // start all
 @font-face {
-    font-family: 'MyFont';
-    src: url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "MyFont";
+  src: url("https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    background-color: $colorBody;
-    font-family: 'Syne', sans-serif;
+  background-color: colors.$colorBody;
+  font-family: "Syne", sans-serif;
 }
 
 .mouse {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
-    width: 7px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $colorOrange;
+  background: colors.$colorOrange;
 }
 
 body nav div div div ul li .active,
 body nav div div div ul li .hoverLink:hover,
 .colorOrange {
-    color: $colorOrange !important;
+  color: colors.$colorOrange !important;
 }
 
 .lineImage {
-    z-index: -1;
+  z-index: -1;
 }
 
 .titleAboutMe {
-    font-size: 28px;
-    transition: 0.3s;
+  font-size: 28px;
+  transition: 0.3s;
 }
 
 .titleAboutMe:hover {
-    margin-left: 0 !important;
+  margin-left: 0 !important;
 }
 
 .titleAboutMe:hover::after {
-    right: 0;
-    opacity: 0;
+  right: 0;
+  opacity: 0;
 }
 
 .titleAboutMe:hover::before {
-    left: 0;
-    opacity: 0;
+  left: 0;
+  opacity: 0;
 }
 
 .titleAboutMe::before,
 .titleAboutMe::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    background-color: $colorOrange;
-    top: 45%;
-    transition: 0.5s;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: colors.$colorOrange;
+  top: 45%;
+  transition: 0.5s;
 }
 
 .titleAboutMe::before {
-    left: -25px;
+  left: -25px;
 }
 
 .titleAboutMe::after {
-    right: -25px;
+  right: -25px;
 }
 
 .textJustify {
-    text-align: justify;
+  text-align: justify;
 }
 
 .styleHireMe {
-    height: 50px;
-    background-color: $colorOrange;
+  height: 50px;
+  background-color: colors.$colorOrange;
 }
 
 .styleHireMe::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0;
-    bottom: 0;
-    background-color: $colorWhite;
-    transition: 0.4s;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  background-color: colors.$colorWhite;
+  transition: 0.4s;
 }
 
 .styleHireMe:hover::before {
-    border-radius: 25px;
-    height: 50px;
+  border-radius: 25px;
+  height: 50px;
 }
 
 .mouse {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 // end all
 // start navbar
 body .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
 }
 
 body .navbar.hidden {
-    opacity: 0;
-    transform: translateY(-100%);
+  opacity: 0;
+  transform: translateY(-100%);
 }
 
 body .navbar.visible {
-    opacity: 1;
-    transform: translateY(0);
-    position: fixed;
-    top: 0;
+  opacity: 1;
+  transform: translateY(0);
+  position: fixed;
+  top: 0;
 }
 
 body .navbar.scroll-up {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
 }
 
 body nav {
-    z-index: 1;
+  z-index: 1;
 }
 
 body nav div div div .sizeLogo {
-    width: 70px;
-    height: 60px;
+  width: 70px;
+  height: 60px;
 }
 
 body nav div div div .divMenu {
-    width: 40px;
-    height: 3px;
-    border-radius: 40px;
-    transition: 0.3s;
+  width: 40px;
+  height: 3px;
+  border-radius: 40px;
+  transition: 0.3s;
 }
 
 body nav div div div .divMenu:first-child {
-    top: -12px;
+  top: -12px;
 }
 
 body nav div div div .divMenu:nth-child(2) {
-    bottom: 0;
+  bottom: 0;
 }
 
 body nav div div div .divMenu:last-child {
-    bottom: -10px;
+  bottom: -10px;
 }
 
 body nav div div .menuNavbarClick {
-    .divMenu:first-child {
-        top: 0;
-        transform: rotate(40deg);
-    }
+  .divMenu:first-child {
+    top: 0;
+    transform: rotate(40deg);
+  }
 
-    .divMenu:nth-child(2) {
-        opacity: 0;
-        transform: rotate(40deg);
-    }
+  .divMenu:nth-child(2) {
+    opacity: 0;
+    transform: rotate(40deg);
+  }
 
-    .divMenu:last-child {
-        top: 0;
-        transform: rotate(-40deg);
-    }
+  .divMenu:last-child {
+    top: 0;
+    transform: rotate(-40deg);
+  }
 }
 
 body nav div div div ul li .hoverLink {
-    color: $colorWhite;
+  color: colors.$colorWhite;
 }
 
 // end navbar
 // start modal
 body div div div div form div .styleInput {
-    background-color: $coloccc;
+  background-color: colors.$coloccc;
 }
 
 body div div div div form div div .buttonClose {
-    height: 50px;
+  height: 50px;
 }
 
-body section div .rowGap div .hoverAbsoluteBottomAndTop div div div .imageModal {
-    height: 100vh;
+body
+  section
+  div
+  .rowGap
+  div
+  .hoverAbsoluteBottomAndTop
+  div
+  div
+  div
+  .imageModal {
+  height: 100vh;
 }
 
 // end modal
 // start main
 body main {
-    height: 100vh;
+  height: 100vh;
 }
 
 body main div div div div div .sizeMainTitle {
-    font-size: 64px;
+  font-size: 64px;
 }
 
 body main div div div div .movementHasn {
-    animation: framesHasn 2s infinite ease-in-out;
+  animation: framesHasn 2s infinite ease-in-out;
 }
 
 @keyframes framesHasn {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    50% {
-        transform: rotate(30deg);
-    }
+  50% {
+    transform: rotate(30deg);
+  }
 
-    80% {
-        transform: rotate(0deg);
-    }
+  80% {
+    transform: rotate(0deg);
+  }
 }
 
 body main div div div div div .sizeSpanText {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 body main div div div .beforeAndAfterImage .sizeImageMe {
-    width: 550px;
-    height: auto;
-    object-fit: contain;
+  width: 550px;
+  height: auto;
+  object-fit: contain;
 }
 
 body main div div div div .styleDivMainRight {
-    width: 45px;
-    height: 100px;
-    right: -10px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.386), #cccccc2c);
+  width: 45px;
+  height: 100px;
+  right: -10px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.386), #cccccc2c);
 }
 
 body main div div div div .styleDivMainRight .mouseArrawUp {
-    bottom: -10px;
+  bottom: -10px;
 
-    img {
-        width: 60px;
-        height: 60px;
-    }
+  img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 body main div div div .beforeAndAfterImage::before,
 body main div div div .beforeAndAfterImage::after {
-    position: absolute;
-    width: 140px;
-    height: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    background-color: $colorWhite;
-    border-radius: 20px;
+  position: absolute;
+  width: 140px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: colors.$colorWhite;
+  border-radius: 20px;
 }
 
 .iconVueJs {
-    width: 50px;
-    filter: brightness(0) invert(1);
-    top: 37%;
-    left: 100px;
-    animation: framesVueJs 5s infinite ease-in-out;
+  width: 50px;
+  filter: brightness(0) invert(1);
+  top: 37%;
+  left: 100px;
+  animation: framesVueJs 5s infinite ease-in-out;
 }
 
 @keyframes framesVueJs {
-    0% {
-        top: 37%;
-        left: 100px;
-    }
+  0% {
+    top: 37%;
+    left: 100px;
+  }
 
-    50% {
-        top: 36%;
-        left: 90px;
-    }
+  50% {
+    top: 36%;
+    left: 90px;
+  }
 
-    100% {
-        top: 37%;
-        left: 100px;
-    }
+  100% {
+    top: 37%;
+    left: 100px;
+  }
 }
 
 .iconBottstrap {
-    width: 50px;
-    animation: framesBootstrap 5s infinite ease-in-out;
+  width: 50px;
+  animation: framesBootstrap 5s infinite ease-in-out;
 }
 
 @keyframes framesBootstrap {
-    0% {
-        top: 37%;
-        right: 140px;
-    }
+  0% {
+    top: 37%;
+    right: 140px;
+  }
 
-    50% {
-        top: 36%;
-        right: 130px;
-    }
+  50% {
+    top: 36%;
+    right: 130px;
+  }
 
-    100% {
-        top: 37%;
-        right: 140px;
-    }
+  100% {
+    top: 37%;
+    right: 140px;
+  }
 }
 
 // end main
 // start numbers
 body section div div div .sizeTitleNumber {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 body section div div div .colorOrangeAndNumber {
-    font-size: 38px;
-    color: $colorOrange;
+  font-size: 38px;
+  color: colors.$colorOrange;
 }
 
 // end numbers
 // start about me
 body main div div div div div .buttonMain div .beforeOrangeArraow::before {
-    content: "";
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: $colorOrange;
-    left: 11.5%;
-    top: 18%;
-    transition: 0.35s;
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: colors.$colorOrange;
+  left: 11.5%;
+  top: 18%;
+  transition: 0.35s;
 }
 
 body main div div div div div .buttonMain {
-    padding: 12px 0;
-    background-color: $colorWhite;
+  padding: 12px 0;
+  background-color: colors.$colorWhite;
 
-    div {
-        .beforeOrangeArraow {
-            img {
-                transform: rotate(0);
-                transition: 0.35s;
-            }
-        }
+  div {
+    .beforeOrangeArraow {
+      img {
+        transform: rotate(0);
+        transition: 0.35s;
+      }
     }
+  }
 }
 
 body main div div div div div .buttonMain:hover {
-    div {
-        .beforeOrangeArraow {
-            img {
-                transform: rotate(55deg);
-            }
-        }
-
-        .beforeOrangeArraow::before {
-            width: 102%;
-            height: 60px;
-            left: -3px;
-            top: -3px;
-            border-radius: 20%;
-        }
+  div {
+    .beforeOrangeArraow {
+      img {
+        transform: rotate(55deg);
+      }
     }
+
+    .beforeOrangeArraow::before {
+      width: 102%;
+      height: 60px;
+      left: -3px;
+      top: -3px;
+      border-radius: 20%;
+    }
+  }
 }
 
 body section div div div div .textAboutMe {
-    font-size: 23px;
+  font-size: 23px;
 }
 
 body section div div div div .sizeImageLaptop {
-    width: 100%;
+  width: 100%;
 }
 
 // end about me
 // start services
 body section div div div .sizeTextServices {
-    font-size: 33px;
+  font-size: 33px;
 }
 
 body section div .rowGap div .heightServices div .sizeImageServes {
-    width: 70px;
-    height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
 body section div .rowGap div .heightServices div .sizeTitleServices {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 body section div .rowGap div .heightServices {
-    box-shadow: 0 0 0 0 $colorOrangeHover;
-    transition: 0.3s;
+  box-shadow: 0 0 0 0 colors.$colorOrangeHover;
+  transition: 0.3s;
 }
 
 body section div .rowGap div .heightServices::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 
 body section div .rowGap div .heightServices:hover {
-    box-shadow: 0 0 4px 4px $colorOrangeHover;
+  box-shadow: 0 0 4px 4px colors.$colorOrangeHover;
 
-    div {
-        img {
-            filter: sepia(1) saturate(4) hue-rotate(-10deg);
-        }
-
-        h2 {
-            color: $colorOrange !important;
-        }
-
-        span {
-            color: $colorWhite;
-        }
+  div {
+    img {
+      filter: sepia(1) saturate(4) hue-rotate(-10deg);
     }
+
+    h2 {
+      color: colors.$colorOrange !important;
+    }
+
+    span {
+      color: colors.$colorWhite;
+    }
+  }
 }
 
 body section div .rowGap div .heightServices div .textNoHover {
-    color: $colorNoHover;
+  color: colors.$colorNoHover;
 }
 
 body section div .rowGap {
-    row-gap: 25px;
+  row-gap: 25px;
 }
 
 // end services
 // start protfolios
-body section div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosTop,
-body section div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosBttom {
-    transition: 0.5s;
+body section div .rowGap div .hoverAbsoluteBottomAndTop {
+  background-color: colors.$colorBlackProject;
 }
 
-body section div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosTop {
-    background-color: $colorOrange;
-    right: 50px;
-    top: -80px;
-    z-index: 1;
-
-    img {
-        transform: translate(0, 0);
-        transition: 0.3s;
-    }
+body section div .rowGap div .hoverAbsoluteBottomAndTop div div .sizeImageTech {
+  width: 30px;
+  height: 30px;
 }
 
-body section div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosTop:hover {
-    img {
-        transform: translate(5px, -5px);
-    }
+body
+  section
+  div
+  .rowGap
+  div
+  .hoverAbsoluteBottomAndTop
+  div
+  div
+  .sizeImageTechVue {
+  filter: brightness(0) invert(1);
 }
 
-body section div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosBttom {
-    bottom: -500px;
-}
+// body section div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosTop,
+// body section div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosBttom {
+//     transition: 0.5s;
+// }
 
-body section div .rowGap div .hoverAbsoluteBottomAndTop:hover {
-    .divProtfoliosTop {
-        top: 30px;
-    }
+// body section div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosTop {
+//     background-color: colors.$colorOrange;
+//     right: 50px;
+//     top: -80px;
+//     z-index: 1;
 
-    .divProtfoliosBttom {
-        bottom: 50px;
-    }
-}
+//     img {
+//         transform: translate(0, 0);
+//         transition: 0.3s;
+//     }
+// }
+
+// body section div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosTop:hover {
+//     img {
+//         transform: translate(5px, -5px);
+//     }
+// }
+
+// body section div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosBttom {
+//     bottom: -500px;
+// }
+
+// body section div .rowGap div .hoverAbsoluteBottomAndTop:hover {
+//     .divProtfoliosTop {
+//         top: 30px;
+//     }
+
+//     .divProtfoliosBttom {
+//         bottom: 50px;
+//     }
+// }
 
 body section div .rowGap div .hoverAbsoluteBottomAndTop .imageProtfolios {
-    object-fit: cover;
-    height: 500px;
+  object-fit: cover;
+  height: 450px;
 }
 
-body section div .rowGap div .hoverAbsoluteBottomAndTop .linkIndexGallery::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(150deg, #00000000, #030303bb);
-}
+// body section div .rowGap div .hoverAbsoluteBottomAndTop .imageProtfolios:hover {
+//     transform: ;
+// }
+
+// body section div .rowGap div .hoverAbsoluteBottomAndTop .linkIndexGallery::before {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     background: linear-gradient(150deg, #00000000, #030303bb);
+// }
 
 // end protfiolos
 // start arraw top
 body .arrawTop {
-    bottom: 30px;
-    right: 30px;
-    background-color: $colorOrange;
-    cursor: pointer;
-    opacity: 0;
-    transition: 0.5s;
+  bottom: 30px;
+  right: 30px;
+  background-color: colors.$colorOrange;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s;
 
-    .imageArrawArotate {
-        transform: rotate(90deg);
-        margin-bottom: 0;
-        transition: 0.3s;
-    }
+  .imageArrawArotate {
+    transform: rotate(90deg);
+    margin-bottom: 0;
+    transition: 0.3s;
+  }
 }
 
 body .arrawTop:hover {
-    .imageArrawArotate {
-        margin-bottom: 10px;
-    }
+  .imageArrawArotate {
+    margin-bottom: 10px;
+  }
 }
 
 body .arrawTop.show {
-    opacity: 1;
+  opacity: 1;
 }
 
 // end arraw top
 // start footer
 body footer div div .borderBottom::before {
-    content: "";
-    position: absolute;
-    width: 20%;
-    bottom: -12px;
-    left: 25%;
-    width: 50%;
-    height: 3px;
-    background-color: $colorOrange;
+  content: "";
+  position: absolute;
+  width: 20%;
+  bottom: -12px;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background-color: colors.$colorOrange;
 }
 
 body footer div div .margintopEmail {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 body footer div div .margintopEmail div ul li .sizeIconFooter {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 body footer div div .margintopEmail .emailLowercase {
-    text-transform: lowercase;
+  text-transform: lowercase;
 }
 
 // end footer
 // start media
 @media (max-width: 1199px) and (min-width: 990px) {
-    body section div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosBttom {
-        display: none;
-    }
+  body section div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosBttom {
+    display: none;
+  }
 }
 
 @media (max-width: 1400px) {
-    body main {
-        margin-top: 150px;
-        height: unset;
-    }
+  body main {
+    margin-top: 150px;
+    height: unset;
+  }
 }
 
 @media (max-width: 1272px) {
+  body main div div div .iconVueJs,
+  body main div div div .iconBottstrap {
+    display: none;
+  }
 
-    body main div div div .iconVueJs,
-    body main div div div .iconBottstrap {
-        display: none;
-    }
-
-    body main div div div .beforeAndAfterImage .sizeImageMe {
-        width: 100%;
-        height: auto;
-    }
+  body main div div div .beforeAndAfterImage .sizeImageMe {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 990px) {
-    body main div div div div div .sizeMainTitle {
-        font-size: 40px;
-    }
+  body main div div div div div .sizeMainTitle {
+    font-size: 40px;
+  }
 
-    body section div div div div .sizeImageLaptop {
-        width: 100%;
-        height: auto;
-    }
+  body section div div div div .sizeImageLaptop {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
-    body section div .rowGap div .heightServices {
-        height: unset;
-    }
+  body section div .rowGap div .heightServices {
+    height: unset;
+  }
 }
 
 // end media
