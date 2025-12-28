@@ -1,3 +1,25 @@
+const filterBtns = document.querySelectorAll('.btn-group .btn');
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => {
+      b.classList.remove('btn-warning');
+      b.classList.add('btn-outline-light');
+    });
+    btn.classList.remove('btn-outline-light');
+    btn.classList.add('btn-warning');
+
+    const filter = btn.dataset.filter;
+    portfolioItems.forEach(item => {
+      if (filter === 'all' || item.dataset.category === filter) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+});
+
 function scrollToBottom() {
   const sections = document.querySelectorAll("section");
   for (let i = 0; i < sections.length; i++) {
@@ -27,19 +49,19 @@ function animateNumber(element, start, end, duration, suffix = "") {
 }
 
 $(document).ready(function () {
-  $("#clickMenu").on("click", function () {
-    $(this).toggleClass("menuNavbarClick");
+  $("#click-menu").on("click", function () {
+    $(this).toggleClass("is-navbar-clicked");
   });
 
-  $(".colorOrangeAndNumber").each(function () {
+  $(".is-design-number").each(function () {
     let element = $(this);
     let targetValue = element.attr("data-target");
     let numericValue = parseInt(targetValue.replace("%", "").replace("+", ""));
     let suffix = targetValue.includes("%")
       ? "%"
       : targetValue.includes("+")
-      ? "+"
-      : "";
+        ? "+"
+        : "";
     let currentValue = 0;
 
     function animateNumber() {

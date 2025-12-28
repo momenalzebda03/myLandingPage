@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/assets/images/logo.svg" />
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/aos.css" />
   <link rel="stylesheet" href="assets/css/index.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.0/dist/jquery.fancybox.min.css" />
   <title>MOMEN ALZEBDA</title>
@@ -40,7 +39,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul class="navbar-nav d-flex gap-lg-5 align-items-lg-center justify-content-lg-center">
             <li title="Home">
-              <a class="nav-link active design-link" href="#home">Home</a>
+              <a class="nav-link design-link" href="#home">Home</a>
             </li>
             <li title="About">
               <a class="nav-link design-link" href="#about">About</a>
@@ -49,7 +48,7 @@
               <a class="nav-link design-link" href="#services">Services</a>
             </li>
             <li title="Portfolios">
-              <a class="nav-link design-link" href="#protfolios">Portfolios</a>
+              <a class="nav-link active design-link" href="#protfolios">Portfolios</a>
             </li>
             <li title="Contact">
               <a class="nav-link design-link" href="#contact">Contact</a>
@@ -85,8 +84,7 @@
             <input type="hidden" name="access_key" value="1cdfeae3-a9de-4051-b8f7-dfb7b1d1f767" />
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control is-color-input" placeholder="Enter your name" name="name"
-                required />
+              required />
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
@@ -117,208 +115,31 @@
     </div>
   </div>
   <!-- end modal -->
-  <!-- start main -->
-  <main class="d-flex align-items-lg-center" id="home">
-    <div class="container">
-      <div class="row mx-0 align-items-center flex-column-reverse align-items-center flex-md-row">
-        <div class="col-12 col-md-6">
-          <div class="d-flex flex-column gap-3">
-            <div>
-              <h2 class="text-white is-size-main-title" data-aos="fade-up">
-                Front-End Developer Vue.js and React.js<span class="movementHasn d-inline-block">👋</span>
-              </h2>
-            </div>
-            <div>
-              <span class="is-design-main-text" data-aos="fade-up">Hi, I'm Momen Alzebda. A passionate Front-end
-                Vue.js And
-                React.js Developer and Software Engineer based in Palestine 📍.
-              </span>
-            </div>
-            <div>
-              <a href="MomenAlzibdaCV.pdf" download="MomenAlzibdaCV.pdf"
-                class="position-relative overflow-hidden nav-link d-inline-block button-cv rounded-5">
-                <div class="d-flex gap-3 align-items-center justify-content-between px-4">
-                  <div class="is-design-arraw">
-                    <img src="assets/images/arraowUp.svg" alt="" class="position-relative" />
-                  </div>
-                  <div class="position-relative">
-                    <span>Personal CV</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-5 px-0">
-          <div class="position-relative is-position-icons" data-aos="fade-down">
-            <img src="assets/images/vuejs.svg" alt="" class="position-absolute icon-vue" />
-            <img src="assets/images/me.png" alt="" class="is-mine-image" />
-            <img src="assets/images/tailwindCss.webp" alt="" class="position-absolute icon-tailwind-css" />
-          </div>
-        </div>
-        <div class="col-1 d-none d-lg-flex justify-content-end">
-          <div class="d-inline-block position-relative" data-aos="fade-down">
-            <div class="d-flex justify-content-center rounded-5 position-absolute bottom-0 is-design-arraw-button">
-              <div class="is-box-arraw-up position-absolute mouse rounded-pill" onclick="scrollToBottom()">
-                <img src="assets/images/arrow-up.svg" alt="arrow up" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <!-- end main -->
-  <!-- start numbers -->
-  <section>
-    <div class="container">
-      <div class="row gap-5 gap-sm-0 mx-0 px-3 bg-black rounded-4 overflow-hidden py-5">
-        <div class="col col-md-4" data-aos="fade-right">
-          <div class="text-white text-center d-flex flex-column gap-2">
-            <h2 class="is-size-title-numbers">Customer satisfaction</h2>
-            <span class="fw-bold is-design-number" data-target="95%">0</span>
-          </div>
-        </div>
-        <div class="col col-md-4">
-          <div class="text-white text-center d-flex flex-column gap-2">
-            <h2 class="is-size-title-numbers">Completed projects</h2>
-            <span class="fw-bold is-design-number" data-target="11+">0</span>
-          </div>
-        </div>
-        <div class="col col-md-4" data-aos="fade-left">
-          <div class="text-white text-center d-flex flex-column gap-2">
-            <h2 class="is-size-title-numbers">Years of experience</h2>
-            <span class="fw-bold is-design-number" data-target="3+">0</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end numbers -->
-  <!-- start about me -->
-  <section id="about">
-    <div class="container">
-      <div class="row gap-3 gap-md-0 align-items-center">
-        <div class="col-12 col-md-6">
-          <div class="d-flex flex-column gap-3">
-            <div data-aos="fade-up">
-              <h2 class="d-inline-block position-relative fw-bold is-color-orange all-title ms-4">
-                ABOUT ME
-              </h2>
-            </div>
-            <span class="is-size-about-me text-justify text-white" data-aos="fade-up">Momen Alzebda is a passionate Front-End
-              Developer with over two years of hands-on experience building
-              modern, responsive, and user-friendly web applications. He specializes in HTML, CSS, SCSS, Tailwind CSS,
-              Bootstrap, JavaScript, Vue.js, and React.js, with a strong focus on clean code and performance
-              optimization.
-              Driven by a love for innovation and problem-solving, Momen creates seamless digital experiences that
-              combine functionality with elegant design. He is always eager to learn new technologies and deliver
-              high-quality results that meet real-world needs. 🚀</span>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="d-flex justify-content-end" data-aos="fade-down">
-            <img src="assets/images/laptop.png" alt="" class="size-image-laptop" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end about me -->
-  <!-- start services -->
-  <section id="services">
-    <div class="container">
-      <div class="text-white text-center">
-        <div class="d-flex flex-column gap-3">
-          <div data-aos="flip-up">
-            <h2 class="d-inline-block position-relative fw-bold is-color-orange all-title">
-              SERVICES
-            </h2>
-          </div>
-          <h3 class="is-size-title-services" data-aos="flip-up">
-            Making Magic Happen for Your Business
-          </h3>
-        </div>
-      </div>
-      <div class="row rowGap py-5">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="bg-black p-4 rounded-4 d-flex flex-column gap-5 h-100 is-design-service">
-            <div>
-              <img src="assets/images/services2.svg" alt="" class="is-size-icon-serivce" />
-            </div>
-            <div class="d-flex flex-column gap-3">
-              <h2 class="text-white w-100 fw-bold is-size-title-serivce" data-aos="flip-up">
-                Ability to handle API
-              </h2>
-              <span class="text-justify is-design-text-serivce" id="textSubstring" data-aos="flip-up">I work flexibly and
-                efficiently with APIs and back-end
-                systems to enable seamless integration between platforms and
-                effective data exchange. I manage and execute requests and
-                process data (read, create, update, delete) with precision,
-                presenting it in clear, easy-to-understand formats. I focus on
-                ensuring data quality and security at every step to deliver
-                reliable, fast performance that enhances user experience and
-                improves system efficiency</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="bg-black p-4 rounded-4 d-flex flex-column gap-5 h-100 is-design-service">
-            <div>
-              <img src="assets/images/services3.svg" alt="" class="is-size-icon-serivce" />
-            </div>
-            <div class="d-flex flex-column gap-3">
-              <h2 class="text-white w-100 fw-bold is-size-title-serivce" data-aos="flip-up">
-                Design Responsive
-              </h2>
-              <span class="text-justify is-design-text-serivce" id="textSubstring" data-aos="flip-up">Responsive design ensures
-                websites adapt seamlessly to
-                different screen sizes and devices for an optimal user
-                experience.</span>
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="bg-black p-4 rounded-4 d-flex flex-column gap-5 h-100 is-design-service">
-            <div>
-              <img src="assets/images/ImprovingPerformance.png" alt="" class="is-size-icon-serivce" />
-            </div>
-            <div class="d-flex flex-column gap-3">
-              <h2 class="text-white w-100 fw-bold is-size-title-serivce" data-aos="flip-up">
-                Improving performance and speed
-              </h2>
-              <span class="text-justify is-design-text-serivce" id="textSubstring" data-aos="flip-up">I focus on front-end
-                performance optimization and
-                responsiveness to ensure a smooth, efficient user experience.
-                By minimizing load times and refining code and interactive
-                elements, I deliver fast, lightweight, and responsive websites
-                across all devices. Front-end speed isn’t just a technical
-                detail—it’s what keeps users engaged and satisfied.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end services -->
   <!-- start protfolios -->
-  <section id="protfolios">
+  <section class="section-protfolios-page" id="protfolios">
     <div class="container">
       <div class="text-white text-center">
         <div class="d-flex flex-column gap-3">
-          <div data-aos="flip-up">
+          <div>
             <h2 class="d-inline-block position-relative fw-bold is-color-orange all-title">
               PROTFOLIOS
             </h2>
           </div>
-          <h3 class="is-size-title-services" data-aos="flip-up">Selected Work</h3>
+          <h3 class="is-size-title-services">Selected Work</h3>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center my-4">
+        <div class="btn-group" role="group" aria-label="Portfolio Filter">
+          <button type="button" class="btn btn-warning active" data-filter="all">All</button>
+          <button type="button" class="btn btn-outline-light" data-filter="ecommerce">E-commerce</button>
+          <button type="button" class="btn btn-outline-light" data-filter="charities">Charities & Organizations</button>
+          <button type="button" class="btn btn-outline-light" data-filter="marketing">Marketing</button>
+          <button type="button" class="btn btn-outline-light" data-filter="companies">Companies & Freelance</button>
         </div>
       </div>
       <div class="row rowGap mt-5">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div data-aos="fade-up"
-            class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
+        <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="marketing">
+          <div class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
             <a href="assets/images/riseMarketing.png" data-fancybox="gallery" data-caption="Rise Marketing platform"
               class="linkIndexGallery">
               <img src="assets/images/riseMarketing.png" alt="riseMarketing"
@@ -353,11 +174,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div data-aos="fade-up"
-            class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
+        <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="ecommerce">
+          <div class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
             <a href="assets/images/byku.png" data-fancybox="gallery" data-caption="BYKU" class="linkIndexGallery">
-              <img src="assets/images/byku.png" alt="byku" class="w-100 rounded-3 overflow-hidden is-image-protfolios" />
+              <img src="assets/images/byku.png" alt="byku"
+                class="w-100 rounded-3 overflow-hidden is-image-protfolios" />
             </a>
             <div>
               <h2 class="mt-4 text-white">BYKU</h2>
@@ -389,11 +210,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div data-aos="fade-up"
-            class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
+        <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="charities">
+          <div class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
             <a href="assets/images/rahma.png" data-fancybox="gallery" data-caption="Rahma" class="linkIndexGallery">
-              <img src="assets/images/rahma.png" alt="rahma" class="w-100 rounded-3 overflow-hidden is-image-protfolios" />
+              <img src="assets/images/rahma.png" alt="rahma"
+                class="w-100 rounded-3 overflow-hidden is-image-protfolios" />
             </a>
             <div>
               <h2 class="mt-4 text-white">Rhmacharity</h2>
@@ -417,7 +238,8 @@
               <a target="_blank" href="https://vuejs.org/"
                 class="d-flex gap-2 text-white text-decoration-none align-items-center">
                 <div>
-                  <img src="assets/images/vuejs.svg" alt="Vue" class="is-size-icon-eye is-size-icon-eye-vue object-cover" />
+                  <img src="assets/images/vuejs.svg" alt="Vue"
+                    class="is-size-icon-eye is-size-icon-eye-vue object-cover" />
                 </div>
                 <div class="mt-1">
                   <span>Vue.js</span>
@@ -426,9 +248,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div data-aos="fade-up"
-            class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
+        <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="marketing">
+          <div class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
             <a href="assets/images/portfoliosWteen.png" data-fancybox="gallery" data-caption="wteen"
               class="linkIndexGallery">
               <img src="assets/images/portfoliosWteen.png" alt="wteen"
@@ -464,11 +285,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div data-aos="fade-up"
-            class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
+        <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="marketing">
+          <div class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
             <a href="assets/images/lynnc.png" data-fancybox="gallery" data-caption="LYNNC" class="linkIndexGallery">
-              <img src="assets/images/lynnc.png" alt="LYNNC" class="w-100 rounded-3 overflow-hidden is-image-protfolios" />
+              <img src="assets/images/lynnc.png" alt="LYNNC"
+                class="w-100 rounded-3 overflow-hidden is-image-protfolios" />
             </a>
             <div>
               <h2 class="mt-4 text-white">LYNNC</h2>
@@ -500,9 +321,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div data-aos="fade-up"
-            class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
+        <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="companies">
+          <div class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
             <a href="assets/images/aboAta.png" data-fancybox="gallery" data-caption="Abo Ata" class="linkIndexGallery">
               <img src="assets/images/aboAta.png" alt="Abo Ata"
                 class="w-100 rounded-3 overflow-hidden is-image-protfolios" />
@@ -537,10 +357,223 @@
             </div>
           </div>
         </div>
-        <div class="d-flex justify-content-center">
-          <a href="projects.html" class="btn btn-outline-warning px-4 py-2 rounded-pill">
-            <span class="position-relative">More Projects</span>
-          </a>
+        <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="charities">
+          <div class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
+            <a href="assets/images/masjd.jpeg" data-fancybox="gallery" data-caption="masjd" class="linkIndexGallery">
+              <img src="assets/images/masjd.jpeg" alt="masjd"
+                class="w-100 rounded-3 overflow-hidden is-image-protfolios" />
+            </a>
+            <div>
+              <h2 class="mt-4 text-white">Masjd</h2>
+              <span class="mt-4 text-white text-justify">
+                I updated the Mosque project by adding Zakat management, integrating Google Maps for easy navigation to
+                the mosque, designing a comfortable and user-friendly interface (UI), and displaying accurate daily
+                prayer times for the visitors.
+              </span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a target="_blank" href="#" class="d-flex gap-2 text-white text-decoration-none align-items-center">
+                <div>
+                  <img src="assets/images/eye.svg" alt="eye" class="is-size-icon-eye" />
+                </div>
+                <div class="mt-1">
+                  <span>View Project</span>
+                </div>
+              </a>
+              <a target="_blank" href="https://tailwindcss.com/"
+                class="d-flex gap-2 text-white text-decoration-none align-items-center">
+                <div>
+                  <img src="assets/images/tailwindCss.webp" alt="tailwindCss" class="is-size-icon-eye object-cover" />
+                </div>
+                <div class="mt-1">
+                  <span>tailwindCss</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="companies">
+          <div class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
+            <a href="assets/images/ibrahimalbalushi.com.jpeg" data-fancybox="gallery" data-caption="ibrahimalbalushi"
+              class="linkIndexGallery">
+              <img src="assets/images/ibrahimalbalushi.com.jpeg" alt="ibrahimalbalushi"
+                class="w-100 rounded-3 overflow-hidden is-image-protfolios" />
+            </a>
+            <div>
+              <h2 class="mt-4 text-white">ibrahimal balushi</h2>
+              <span class="mt-4 text-white text-justify">
+                I developed the Mosque project by adding Zakat management, integrating Google Maps for easy navigation,
+                designing a user-friendly interface (UI), and displaying accurate daily prayer times.
+                Additionally, I created a separate project for a violin musician and implemented language direction
+                switching (RTL ⇄ LTR) with saved preferences to enhance usability for different users.
+              </span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a target="_blank" href="https://ibrahimalbalushi.com/en"
+                class="d-flex gap-2 text-white text-decoration-none align-items-center">
+                <div>
+                  <img src="assets/images/eye.svg" alt="eye" class="is-size-icon-eye" />
+                </div>
+                <div class="mt-1">
+                  <span>View Project</span>
+                </div>
+              </a>
+              <a target="_blank" href="https://tailwindcss.com/"
+                class="d-flex gap-2 text-white text-decoration-none align-items-center">
+                <div>
+                  <img src="assets/images/tailwindCss.webp" alt="tailwindCss" class="is-size-icon-eye object-cover" />
+                </div>
+                <div class="mt-1">
+                  <span>tailwindCss</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="ecommerce">
+          <div class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
+            <a href="assets/images/sanam.jpeg" data-fancybox="gallery" data-caption="sanam" class="linkIndexGallery">
+              <img src="assets/images/sanam.jpeg" alt="sanam"
+                class="w-100 rounded-3 overflow-hidden is-image-protfolios" />
+            </a>
+            <div>
+              <h2 class="mt-4 text-white">Sanam</h2>
+              <span class="mt-4 text-white text-justify">
+                I developed a full-featured e-commerce store using React and Next.js, with a large, well-structured, and
+                easy-to-read project architecture that ensures smooth performance and maintainability.
+              </span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a target="_blank" href="https://animated-gumdrop-fb90db.netlify.app/"
+                class="d-flex gap-2 text-white text-decoration-none align-items-center">
+                <div>
+                  <img src="assets/images/eye.svg" alt="eye" class="is-size-icon-eye" />
+                </div>
+                <div class="mt-1">
+                  <span>View Project</span>
+                </div>
+              </a>
+              <a target="_blank" href="https://tailwindcss.com/"
+                class="d-flex gap-2 text-white text-decoration-none align-items-center">
+                <div>
+                  <img src="assets/images/tailwindCss.webp" alt="tailwindCss" class="is-size-icon-eye object-cover" />
+                </div>
+                <div class="mt-1">
+                  <span>tailwindCss</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="companies">
+          <div class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
+            <a href="assets/images/fadaa-tech.com.jpeg" data-fancybox="gallery" data-caption="fadaa"
+              class="linkIndexGallery">
+              <img src="assets/images/fadaa-tech.com.jpeg" alt="fadaa"
+                class="w-100 rounded-3 overflow-hidden is-image-protfolios" />
+            </a>
+            <div>
+              <h2 class="mt-4 text-white">fadaa tech</h2>
+              <span class="mt-4 text-white text-justify">
+                I worked on the Fadaa Tech platform, a technology company, where I contributed to developing and
+                enhancing their web solutions. My work included implementing responsive designs, optimizing user
+                experience (UX/UI), and ensuring smooth performance across the platform. This project allowed me to
+                apply modern web technologies and best practices to deliver a professional and reliable product.
+              </span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a target="_blank" href="https://fadaa-tech.com/"
+                class="d-flex gap-2 text-white text-decoration-none align-items-center">
+                <div>
+                  <img src="assets/images/eye.svg" alt="eye" class="is-size-icon-eye" />
+                </div>
+                <div class="mt-1">
+                  <span>View Project</span>
+                </div>
+              </a>
+              <a target="_blank" href="https://tailwindcss.com/"
+                class="d-flex gap-2 text-white text-decoration-none align-items-center">
+                <div>
+                  <img src="assets/images/tailwindCss.webp" alt="tailwindCss" class="is-size-icon-eye object-cover" />
+                </div>
+                <div class="mt-1">
+                  <span>tailwindCss</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="marketing">
+          <div class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
+            <a href="assets/images/htova.jpeg" data-fancybox="gallery" data-caption="htova" class="linkIndexGallery">
+              <img src="assets/images/htova.jpeg" alt="htova"
+                class="w-100 rounded-3 overflow-hidden is-image-protfolios" />
+            </a>
+            <div>
+              <h2 class="mt-4 text-white">Htova</h2>
+              <span class="mt-4 text-white text-justify">
+                I developed the website for Htova, a logistics and shipping platform, where users can manage cargo
+                shipments, track deliveries, and access shipping services efficiently. The project focused on creating a
+                smooth and user-friendly interface, optimizing performance, and ensuring the platform is reliable for
+                both clients and administrators.
+              </span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a target="_blank" href="#" class="d-flex gap-2 text-white text-decoration-none align-items-center">
+                <div>
+                  <img src="assets/images/eye.svg" alt="eye" class="is-size-icon-eye" />
+                </div>
+                <div class="mt-1">
+                  <span>View Project</span>
+                </div>
+              </a>
+              <a target="_blank" href="https://getbootstrap.com/"
+                class="d-flex gap-2 text-white text-decoration-none align-items-center">
+                <div>
+                  <img src="assets/images/bootstrap.png" alt="bootstrap" class="is-size-icon-eye object-cover" />
+                </div>
+                <div class="mt-1">
+                  <span>Bootstrap</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="charities">
+          <div class="py-3 px-4 rounded-3 is-bg-protfolios h-100 d-flex flex-column justify-content-between gap-4">
+            <a href="assets/images/snada.jpeg" data-fancybox="gallery" data-caption="snada" class="linkIndexGallery">
+              <img src="assets/images/snada.jpeg" alt="snada"
+                class="w-100 rounded-3 overflow-hidden is-image-protfolios" />
+            </a>
+            <div>
+              <h2 class="mt-4 text-white">Snada</h2>
+              <span class="mt-4 text-white text-justify">
+                I developed the website for Sanada, a charitable organization that provides assistance to people in
+                need. The project focused on creating a user-friendly and accessible platform to showcase the
+                organization’s initiatives, accept donations, and facilitate communication with volunteers and
+                beneficiaries.
+              </span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a target="_blank" href="#" class="d-flex gap-2 text-white text-decoration-none align-items-center">
+                <div>
+                  <img src="assets/images/eye.svg" alt="eye" class="is-size-icon-eye" />
+                </div>
+                <div class="mt-1">
+                  <span>View Project</span>
+                </div>
+              </a>
+              <a target="_blank" href="https://getbootstrap.com/"
+                class="d-flex gap-2 text-white text-decoration-none align-items-center">
+                <div>
+                  <img src="assets/images/bootstrap.png" alt="bootstrap" class="is-size-icon-eye object-cover" />
+                </div>
+                <div class="mt-1">
+                  <span>Bootstrap</span>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -593,7 +626,6 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/index.js"></script>
-<script src="assets/js/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.0/dist/jquery.fancybox.min.js"></script>
 
 <script>
@@ -602,12 +634,6 @@
       loop: true,
       buttons: ["zoom", "close"],
     });
-  });
-
-  AOS.init({
-    duration: 1200,
-    once: false,
-    offset: 200,
   });
 </script>
 

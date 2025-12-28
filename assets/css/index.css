@@ -1,11 +1,38 @@
-@font-face {
-  font-family: "MyFont";
-  src: url("https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+:root {
+  --colorBody: #101113;
+  --colorBlackProject: rgba(64, 64, 64, 0.411);
+  --colorWhite: white;
+  --colorOrange: #febe2a;
+  --colorNoHover: #ACACAC;
+  --coloccc: #ccc;
 }
+
+@font-face {
+  font-family: "Syne";
+  src: url("/assets/fonts/Syne-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url("/assets/fonts/Syne-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url("/assets/fonts/Syne-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url("/assets/fonts/Syne-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
 body {
-  background-color: #101113;
+  background-color: var(--colorBody);
   font-family: "Syne", sans-serif;
 }
 
@@ -18,79 +45,60 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FDC84C;
+  background: var(--colorOrange);
 }
 
 body nav div div div ul li .active,
-body nav div div div ul li .hoverLink:hover,
-.colorOrange {
-  color: #FDC84C !important;
+body nav div div div ul li .design-link:hover,
+.is-color-orange {
+  color: var(--colorOrange) !important;
 }
 
 .lineImage {
   z-index: -1;
 }
 
-.titleAboutMe {
-  font-size: 28px;
+.all-title {
+  font-size: 22px;
   transition: 0.3s;
+  font-weight: 400;
 }
 
-.titleAboutMe:hover {
+.all-title:hover {
   margin-left: 0 !important;
 }
 
-.titleAboutMe:hover::after {
+.all-title:hover::after {
   right: 0;
   opacity: 0;
 }
 
-.titleAboutMe:hover::before {
+.all-title:hover::before {
   left: 0;
   opacity: 0;
 }
 
-.titleAboutMe::before,
-.titleAboutMe::after {
+.all-title::before,
+.all-title::after {
   content: "";
   position: absolute;
   width: 20px;
   height: 2px;
-  background-color: #FDC84C;
+  background-color: var(--colorOrange);
   top: 45%;
   transition: 0.5s;
 }
 
-.titleAboutMe::before {
+.all-title::before {
   left: -25px;
 }
 
-.titleAboutMe::after {
+.all-title::after {
   right: -25px;
 }
 
-.textJustify {
+.text-justify {
   text-align: justify;
-}
-
-.styleHireMe {
-  height: 50px;
-  background-color: #FDC84C;
-}
-
-.styleHireMe::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0;
-  bottom: 0;
-  background-color: white;
-  transition: 0.4s;
-}
-
-.styleHireMe:hover::before {
-  border-radius: 25px;
-  height: 50px;
 }
 
 .mouse {
@@ -127,56 +135,60 @@ body nav {
   z-index: 1;
 }
 
-body nav div div div .sizeLogo {
+body nav div div div .logo-size {
   width: 70px;
   height: 60px;
 }
 
-body nav div div div .divMenu {
+body nav div div div .design-menu {
   width: 40px;
   height: 3px;
   border-radius: 40px;
   transition: 0.3s;
 }
 
-body nav div div div .divMenu:first-child {
+body nav div div div .design-menu:first-child {
   top: -12px;
 }
 
-body nav div div div .divMenu:nth-child(2) {
+body nav div div div .design-menu:nth-child(2) {
   bottom: 0;
 }
 
-body nav div div div .divMenu:last-child {
+body nav div div div .design-menu:last-child {
   bottom: -10px;
 }
 
-body nav div div .menuNavbarClick .divMenu:first-child {
+body nav div div .is-navbar-clicked .design-menu:first-child {
   top: 0;
   transform: rotate(40deg);
 }
-body nav div div .menuNavbarClick .divMenu:nth-child(2) {
+
+body nav div div .is-navbar-clicked .design-menu:nth-child(2) {
   opacity: 0;
   transform: rotate(40deg);
 }
-body nav div div .menuNavbarClick .divMenu:last-child {
+
+body nav div div .is-navbar-clicked .design-menu:last-child {
   top: 0;
   transform: rotate(-40deg);
 }
 
-body nav div div div ul li .hoverLink {
-  color: white;
+body nav div div div ul li .design-link {
+  color: var(--colorWhite);
+  font-size: 18px;
+  font-weight: 600;
 }
 
-body div div div div form div .styleInput {
-  background-color: #ccc;
+.design-text-btn {
+  font-weight: 500;
 }
 
-body div div div div form div div .buttonClose {
-  height: 50px;
+body div div div div form div .is-color-input {
+  background-color: var(--coloccc);
 }
 
-body section div .rowGap div .hoverAbsoluteBottomAndTop div div div .imageModal {
+body section div .rowGap div .is-bg-protfolios div div div .imageModal {
   height: 100vh;
 }
 
@@ -184,8 +196,9 @@ body main {
   height: 100vh;
 }
 
-body main div div div div div .sizeMainTitle {
-  font-size: 64px;
+body main div div div div div .is-size-main-title {
+  font-size: 50px;
+  font-weight: 600;
 }
 
 body main div div div div .movementHasn {
@@ -196,41 +209,49 @@ body main div div div div .movementHasn {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(30deg);
   }
+
   80% {
     transform: rotate(0deg);
   }
 }
-body main div div div div div .sizeSpanText {
-  font-size: 20px;
+
+body main div div div div div .is-design-main-text {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--coloccc);
 }
 
-body main div div div .beforeAndAfterImage .sizeImageMe {
+body main div div div .is-position-icons .is-mine-image {
   width: 550px;
   height: auto;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
-body main div div div div .styleDivMainRight {
+body main div div div div .is-design-arraw-button {
   width: 45px;
   height: 100px;
   right: -10px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.386), rgba(204, 204, 204, 0.1725490196));
 }
 
-body main div div div div .styleDivMainRight .mouseArrawUp {
+body main div div div div .is-design-arraw-button .is-box-arraw-up {
   bottom: -10px;
-}
-body main div div div div .styleDivMainRight .mouseArrawUp img {
-  width: 60px;
-  height: 60px;
+  background-color: var(--colorOrange);
+  padding: 10px;
 }
 
-body main div div div .beforeAndAfterImage::before,
-body main div div div .beforeAndAfterImage::after {
+body main div div div div .is-design-arraw-button .is-box-arraw-up img {
+  width: 26px;
+  height: 26px;
+}
+
+body main div div div .is-position-icons::before,
+body main div div div .is-position-icons::after {
   position: absolute;
   width: 140px;
   height: 36px;
@@ -238,11 +259,11 @@ body main div div div .beforeAndAfterImage::after {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  background-color: white;
+  background-color: var(--colorWhite);
   border-radius: 20px;
 }
 
-.iconVueJs {
+body main div div div .icon-vue {
   width: 50px;
   filter: brightness(0) invert(1);
   top: 37%;
@@ -255,16 +276,19 @@ body main div div div .beforeAndAfterImage::after {
     top: 37%;
     left: 100px;
   }
+
   50% {
     top: 36%;
     left: 90px;
   }
+
   100% {
     top: 37%;
     left: 100px;
   }
 }
-.iconBottstrap {
+
+body main div div div .icon-tailwind-css {
   width: 50px;
   animation: framesBootstrap 5s infinite ease-in-out;
 }
@@ -274,49 +298,56 @@ body main div div div .beforeAndAfterImage::after {
     top: 37%;
     right: 140px;
   }
+
   50% {
     top: 36%;
     right: 130px;
   }
+
   100% {
     top: 37%;
     right: 140px;
   }
 }
-body section div div div .sizeTitleNumber {
+
+body section div div div .is-size-title-numbers {
   font-size: 24px;
+  font-weight: 400;
 }
 
-body section div div div .colorOrangeAndNumber {
+body section div div div .is-design-number {
   font-size: 38px;
-  color: #FDC84C;
+  color: var(--colorOrange);
+  font-weight: 800;
 }
 
-body main div div div div div .buttonMain div .beforeOrangeArraow::before {
+body main div div div div div .button-cv div .is-design-arraw::before {
   content: "";
   position: absolute;
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #FDC84C;
+  background-color: var(--colorOrange);
   left: 11.5%;
   top: 18%;
   transition: 0.35s;
 }
 
-body main div div div div div .buttonMain {
+body main div div div div div .button-cv {
   padding: 12px 0;
-  background-color: white;
+  background-color: var(--colorWhite);
 }
-body main div div div div div .buttonMain div .beforeOrangeArraow img {
+
+body main div div div div div .button-cv div .is-design-arraw img {
   transform: rotate(0);
   transition: 0.35s;
 }
 
-body main div div div div div .buttonMain:hover div .beforeOrangeArraow img {
+body main div div div div div .button-cv:hover div .is-design-arraw img {
   transform: rotate(55deg);
 }
-body main div div div div div .buttonMain:hover div .beforeOrangeArraow::before {
+
+body main div div div div div .button-cv:hover div .is-design-arraw::before {
   width: 102%;
   height: 60px;
   left: -3px;
@@ -324,84 +355,96 @@ body main div div div div div .buttonMain:hover div .beforeOrangeArraow::before 
   border-radius: 20%;
 }
 
-body section div div div div .textAboutMe {
-  font-size: 23px;
+body section div div div div .is-size-about-me {
+  font-size: 21px;
+  font-weight: 400;
 }
 
-body section div div div div .sizeImageLaptop {
+body section div div div div .size-image-laptop {
   width: 100%;
 }
 
-body section div div div .sizeTextServices {
+body section div div div .is-size-title-services {
   font-size: 33px;
+  font-weight: 600;
 }
 
-body section div .rowGap div .heightServices div .sizeImageServes {
+body section div .rowGap div .is-design-service div .is-size-icon-serivce {
   width: 70px;
   height: 70px;
 }
 
-body section div .rowGap div .heightServices div .sizeTitleServices {
-  font-size: 35px;
+body section div .rowGap div .is-design-service div .is-size-title-serivce {
+  font-size: 30px;
+  font-weight: 600;
 }
 
-body section div .rowGap div .heightServices {
+body section div .rowGap div .is-design-service {
   box-shadow: 0 0 0 0 rgba(253, 200, 76, 0.5803921569);
   transition: 0.3s;
 }
 
-body section div .rowGap div .heightServices::-webkit-scrollbar {
+body .section-protfolios-page {
+  margin-top: 150px;
+}
+
+body section div .rowGap div .is-design-service::-webkit-scrollbar {
   width: 0;
 }
 
-body section div .rowGap div .heightServices:hover {
+body section div .rowGap div .is-design-service:hover {
   box-shadow: 0 0 4px 4px rgba(253, 200, 76, 0.5803921569);
 }
-body section div .rowGap div .heightServices:hover div img {
+
+body section div .rowGap div .is-design-service:hover div img {
   filter: sepia(1) saturate(4) hue-rotate(-10deg);
 }
-body section div .rowGap div .heightServices:hover div h2 {
-  color: #FDC84C !important;
-}
-body section div .rowGap div .heightServices:hover div span {
-  color: white;
+
+body section div .rowGap div .is-design-service:hover div h2 {
+  color: var(--colorOrange) !important;
 }
 
-body section div .rowGap div .heightServices div .textNoHover {
-  color: #ACACAC;
+body section div .rowGap div .is-design-service:hover div span {
+  color: var(--colorWhite);
+}
+
+body section div .rowGap div .is-design-service div .is-design-text-serivce {
+  color: var(--colorNoHover);
+  font-weight: 600;
 }
 
 body section div .rowGap {
   row-gap: 25px;
 }
 
-body section div .rowGap div .hoverAbsoluteBottomAndTop {
-  background-color: rgba(64, 64, 64, 0.411);
+body section div .rowGap div .is-bg-protfolios {
+  background-color: var(--colorBlackProject);
 }
 
-body section div .rowGap div .hoverAbsoluteBottomAndTop div div .sizeImageTech {
+body section div .rowGap div .is-bg-protfolios div div .is-size-icon-eye {
   width: 30px;
   height: 30px;
 }
 
-body section div .rowGap div .hoverAbsoluteBottomAndTop div div .sizeImageTechVue {
+body section div .rowGap div .is-bg-protfolios div div .is-size-icon-eye-vue {
   filter: brightness(0) invert(1);
 }
 
-body section div .rowGap div .hoverAbsoluteBottomAndTop .imageProtfolios {
+body section div .rowGap div .is-bg-protfolios .is-image-protfolios {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 450px;
 }
 
 body .arrawTop {
   bottom: 30px;
   right: 30px;
-  background-color: #FDC84C;
+  background-color: var(--colorOrange);
   cursor: pointer;
   opacity: 0;
   transition: 0.5s;
 }
+
 body .arrawTop .imageArrawArotate {
   transform: rotate(90deg);
   margin-bottom: 0;
@@ -416,7 +459,7 @@ body .arrawTop.show {
   opacity: 1;
 }
 
-body footer div div .borderBottom::before {
+body footer div div .is-design-title-footer::before {
   content: "";
   position: absolute;
   width: 20%;
@@ -424,54 +467,63 @@ body footer div div .borderBottom::before {
   left: 25%;
   width: 50%;
   height: 3px;
-  background-color: #FDC84C;
+  background-color: var(--colorOrange);
 }
 
-body footer div div .margintopEmail {
+body footer div div .is-size-footer-media {
   margin-top: 40px;
 }
 
-body footer div div .margintopEmail div ul li .sizeIconFooter {
+body footer div div .is-size-footer-media div ul li .is-size-icon-media {
   width: 30px;
   height: 30px;
 }
 
-body footer div div .margintopEmail .emailLowercase {
+body footer div div .is-size-footer-media .is-email-lowercase {
   text-transform: lowercase;
 }
 
 @media (max-width: 1199px) and (min-width: 990px) {
-  body section div .rowGap div .hoverAbsoluteBottomAndTop .divProtfoliosBttom {
+  body section div .rowGap div .is-bg-protfolios .is-image-protfolios {
     display: none;
   }
 }
+
 @media (max-width: 1400px) {
   body main {
     margin-top: 150px;
     height: unset;
   }
 }
+
 @media (max-width: 1272px) {
-  body main div div div .iconVueJs,
-  body main div div div .iconBottstrap {
+
+  body main div div div .icon-vue,
+  body main div div div .icon-tailwind-css {
     display: none;
   }
-  body main div div div .beforeAndAfterImage .sizeImageMe {
+
+  body main div div div .is-position-icons .is-mine-image {
     width: 100%;
     height: auto;
   }
 }
+
 @media (max-width: 990px) {
-  body main div div div div div .sizeMainTitle {
+  body main div div div div div .is-size-main-title {
     font-size: 40px;
   }
-  body section div div div div .sizeImageLaptop {
+
+  body section div div div div .size-image-laptop {
     width: 100%;
     height: auto;
   }
 }
+
 @media (max-width: 768px) {
-  body section div .rowGap div .heightServices {
+  body section div .rowGap div .is-size-icon-serivce {
     height: unset;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
