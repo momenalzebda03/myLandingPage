@@ -192,6 +192,19 @@ body section div .rowGap div .is-bg-protfolios div div div .imageModal {
   height: 100vh;
 }
 
+body section div .rowGap div .is-bg-protfolios {
+  overflow: hidden;
+}
+
+body section div .rowGap div .is-bg-protfolios a img {
+  transition: 0.5s;
+  transform: scale(1);
+}
+
+body section div .rowGap div .is-bg-protfolios:hover a img {
+  transform: scale(1.05);
+}
+
 body main {
   height: 100vh;
 }
