@@ -323,12 +323,12 @@ body main div div div .icon-tailwind-css {
   }
 }
 
-body section div div div .is-size-title-numbers {
+body section ul li div .is-size-title-numbers {
   font-size: 24px;
   font-weight: 400;
 }
 
-body section div div div .is-design-number {
+body section ul li div .is-design-number {
   font-size: 38px;
   color: var(--colorOrange);
   font-weight: 800;
