@@ -192,17 +192,13 @@ body section div .rowGap div .is-bg-protfolios div div div .imageModal {
   height: 100vh;
 }
 
-body section div .rowGap div .is-bg-protfolios {
-  overflow: hidden;
-}
-
-body section div .rowGap div .is-bg-protfolios a img {
+body section div .rowGap div .is-bg-protfolios img {
   transition: 0.5s;
   transform: scale(1);
 }
 
-body section div .rowGap div .is-bg-protfolios:hover a img {
-  transform: scale(1.05);
+body section div .rowGap div .is-bg-protfolios:hover img {
+  transform: rotate(5deg) scale(1.08);
 }
 
 body main {
@@ -421,7 +417,7 @@ body section div .rowGap div .is-design-service:hover div span {
   color: var(--colorWhite);
 }
 
-body section div .rowGap div .is-design-service div .is-design-text-serivce {
+.is-design-text-serivce {
   color: var(--colorNoHover);
   font-weight: 600;
 }
@@ -430,23 +426,13 @@ body section div .rowGap {
   row-gap: 25px;
 }
 
-body section div .rowGap div .is-bg-protfolios {
-  background-color: var(--colorBlackProject);
+body section div .rowGap div div div a {
+  text-decoration: none;
 }
 
-body section div .rowGap div .is-bg-protfolios div div .is-size-icon-eye {
-  width: 20px;
-  height: 20px;
-}
-
-body section div .rowGap div .is-bg-protfolios div div .is-size-icon-eye-vue {
-  filter: brightness(0) invert(1);
-}
-
-body section div .rowGap div .is-bg-protfolios .is-image-protfolios {
-  -o-object-fit: cover;
+body section div .rowGap div div div a .is-image-protfolios {
   object-fit: cover;
-  height: 450px;
+  height: 300px;
 }
 
 body .arrawTop {
@@ -494,6 +480,10 @@ body footer div div .is-size-footer-media div ul li .is-size-icon-media {
 
 body footer div div .is-size-footer-media .is-email-lowercase {
   text-transform: lowercase;
+}
+
+.size-description {
+  font-size: 12px;
 }
 
 @media (max-width: 1199px) and (min-width: 990px) {
