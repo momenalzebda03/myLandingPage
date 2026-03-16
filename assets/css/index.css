@@ -9,25 +9,25 @@
 
 @font-face {
   font-family: "Syne";
-  src: url("/assets/fonts/Syne-SemiBold.ttf") format("truetype");
+  src: url("../fonts/Syne-SemiBold.ttf") format("truetype");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Syne";
-  src: url("/assets/fonts/Syne-Medium.ttf") format("truetype");
+  src: url("../fonts/Syne-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Syne";
-  src: url("/assets/fonts/Syne-Regular.ttf") format("truetype");
+  src: url("../fonts/Syne-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Syne";
-  src: url("/assets/fonts/Syne-ExtraBold.ttf") format("truetype");
+  src: url("../fonts/Syne-ExtraBold.ttf") format("truetype");
   font-weight: 800;
 }
 
