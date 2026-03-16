@@ -31,9 +31,19 @@
   font-weight: 800;
 }
 
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
+  font-weight: 800;
+}
+
 body {
   background-color: var(--colorBody);
-  font-family: "Syne", sans-serif;
+  font-family: "Syne", sans-serif;  
+}
+
+.font-Shrikhand {
+  font-family: "Shrikhand", sans-serif;
 }
 
 .mouse {
@@ -229,9 +239,10 @@ body main div div div div .movementHasn {
 }
 
 body main div div div div div .is-design-main-text {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 400;
   color: var(--coloccc);
+  line-height: 30px;  
 }
 
 body main div div div .is-position-icons .is-mine-image {
